@@ -6,6 +6,8 @@ set hlsearch
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set tabstop=4
 set shiftwidth=4
+set expandtab                  " spaces instead of tabs
+set softtabstop=4              " a soft-tab of four spaces
 set nocompatible
 set backup
 set backupdir=.
