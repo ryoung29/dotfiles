@@ -1,0 +1,36 @@
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Wed Oct 08 2014 16:58:10 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/.cache/.fr-KkmD3c/kjhealy-latex-custom-kjh-f5ba457/README.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Wed Oct 08 2014 16:58:10 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/.cache/.fr-KkmD3c/kjhealy-latex-custom-kjh-f5ba457/README.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Wed Oct 08 2014 16:58:10 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/.cache/.fr-KkmD3c/kjhealy-latex-custom-kjh-f5ba457/README.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+

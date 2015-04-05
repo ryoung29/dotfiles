@@ -1,0 +1,60 @@
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:35:05 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Desktop/Notes/Work/Precision_Toxicology/Ascent_Validation.md'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:35:05 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Desktop/Notes/Work/Precision_Toxicology/Ascent_Validation.md'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:42:52 GMT-0700 (PDT)
+ Stack       | Error: EACCES, open '/usr/share/haroopad/Libraries/.locales.tar.gz'
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:42:52 GMT-0700 (PDT)
+ Stack       | Error: EACCES, open '/usr/share/haroopad/Libraries/.locales.tar.gz'
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:42:52 GMT-0700 (PDT)
+ Stack       | Error: EACCES, open '/usr/share/haroopad/Libraries/.locales.tar.gz'
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:42:52 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, open '/usr/share/haroopad/Libraries/.locales.tar.gz'
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:42:52 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, open '/usr/share/haroopad/Libraries/.locales.tar.gz'
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Mon Oct 27 2014 09:42:52 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, open '/usr/share/haroopad/Libraries/.locales.tar.gz'
+

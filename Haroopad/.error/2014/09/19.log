@@ -1,0 +1,16 @@
+ Information | Description 
+-------------|-----------------------------
+ Type        | Error
+ Date        | Fri Sep 19 2014 13:13:58 GMT-0700 (PDT)
+ File        | ./build/.haroopad/js/haroopad.bin
+ Line Number | 19
+ Message     | Uncaught TypeError: Object [object global] has no method 'init'
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | Error
+ Date        | Fri Sep 19 2014 13:13:58 GMT-0700 (PDT)
+ File        | ./build/.haroopad/js/haroopad.bin
+ Line Number | 19
+ Message     | Uncaught TypeError: Object [object global] has no method 'init'
+

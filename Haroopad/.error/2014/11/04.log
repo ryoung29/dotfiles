@@ -1,0 +1,48 @@
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Tue Nov 04 2014 11:59:28 GMT-0800 (PST)
+ Stack       | Error: ENOENT, no such file or directory '/media/robert/LIVERMORE/Meeting Notes.md'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Tue Nov 04 2014 11:59:28 GMT-0800 (PST)
+ Stack       | Error: ENOENT, no such file or directory '/media/robert/LIVERMORE/Meeting Notes.md'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Tue Nov 04 2014 11:59:34 GMT-0800 (PST)
+ Stack       | Error: ENOENT, no such file or directory '/media/robert/LIVERMORE/Meeting Notes.md'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Tue Nov 04 2014 11:59:34 GMT-0800 (PST)
+ Stack       | Error: ENOENT, no such file or directory '/media/robert/LIVERMORE/Meeting Notes.md'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+

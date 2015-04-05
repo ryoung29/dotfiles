@@ -1,0 +1,168 @@
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:47:15 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:47:15 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:48:13 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:48:13 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:48:13 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:48:13 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:48:17 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 09:48:17 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 10:11:27 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 10:11:27 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 10:15:25 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 10:15:25 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 10:15:29 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
+ Information | Description 
+-------------|-----------------------------
+ Type        | UncaughtException 
+ Date        | Sat Oct 25 2014 10:15:29 GMT-0700 (PDT)
+ Stack       | Error: ENOENT, no such file or directory '/home/robert/Dropbox/Notes/Linux_How_Tos/SeedDMS_Install.markdown'
+    at Object.fs.statSync (fs.js:684:18)
+    at Backbone.Model.extend.refresh (./build/.haroopad/js/haroopad.bin:9:17007)
+    at Window.<anonymous> (./build/.haroopad/js/haroopad.bin:21:12566)
+    at Window.EventEmitter.emit (events.js:92:17)
+    at Window.init.Window.handleEvent (window_bindings.js:148:13)
+    at IDWeakMap.global.__nwObjectsRegistry.handleEvent (node.js:789:26)
+
