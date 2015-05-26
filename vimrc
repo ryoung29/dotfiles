@@ -11,6 +11,7 @@ set softtabstop=4              " a soft-tab of four spaces
 set nocompatible
 set backup
 set backupdir=.
+set number
 
 source ~/.vim/startup/mappings.vim
 
@@ -22,5 +23,5 @@ let g:ctrlp_cmd='CtrlP'
 
 execute pathogen#infect()
 
-colors molokai
+colors vividchalk
 
