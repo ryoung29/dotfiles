@@ -12,6 +12,7 @@ set nocompatible
 set backup
 set backupdir=.
 set number
+set relativenumber
 
 source ~/.vim/startup/mappings.vim
 

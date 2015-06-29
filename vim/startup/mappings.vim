@@ -1,7 +1,7 @@
 "============== Custom Mappings ===============
 " general mapping
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 nmap <C-Tab> :tabnext<CR>
 nmap <C-S-Tab> :tabprevious<CR>
 map <C-S-Tab> :tabprevious<CR>
@@ -51,9 +51,6 @@ nmap gv guiW
 nmap ]c ]czz
 nmap [c [czz
 
-" default to very magic
-no / /\v
-
 " gO to create a new line below cursor in normal mode
 nmap g<C-O> o<ESC>k
 " g<Ctrl+o> to create a new line above cursor (Ctrl to prevent collision with 'go' command)
@@ -74,3 +71,12 @@ imap <leader>' ''<ESC>i
 imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
+
+"other leader mappings
+nnoremap <Leader>o :CtrlP<CR>
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P

@@ -1,2 +1,3 @@
 # dotfiles
-My configsThis is where my do files and other configs go.
+My configs. 
+This is where my dot files and other configs go.
