@@ -45,7 +45,7 @@ highlight() { command highlight "$@"; test $? = 0 -o $? = 141; }
 case "$extension" in
     # Archive extensions:
     7z|a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
-    rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)
+    rpm|rz|sdp|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)
         try als "$path" && { dump | trim; exit 0; }
         try acat "$path" && { dump | trim; exit 3; }
         try bsdtar -lf "$path" && { dump | trim; exit 0; }
@@ -65,6 +65,12 @@ case "$extension" in
         try lynx   -dump "$path" && { dump | trim | fmt -s -w $width; exit 4; }
         try elinks -dump "$path" && { dump | trim | fmt -s -w $width; exit 4; }
         ;; # fall back to highlight/cat if the text browsers fail
+
+    mp3|ogg)
+        exiftool "$path" && exit 5
+        # Use sed to remove spaces so the output fits into the narrow window
+        try mediainfo "$path" && { dump | trim | sed 's/  \+:/: /;';  exit 5; } || exit 1;;
+        
 esac
 
 case "$mimetype" in
