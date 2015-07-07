@@ -80,10 +80,3 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
-
-"abbreviations
-abbr h1 #
-abbr h2 ##
-abbr h3 ###
-abbr h4 ####
-abbr h5 #####
