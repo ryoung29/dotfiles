@@ -12,12 +12,7 @@ noremap <F7> :set expandtab!<CR>
 nmap <Leader>h :tabnew %:h<CR>
 nmap <SPACE> i<SPACE><ESC>
 nmap <CR> i<CR><ESC>
-
-"custom comma motion mapping
-nmap di, f,dT,
-nmap ci, f,cT
-nmap da, f,ld2F,i,<ESC>l "delete argument 
-nmap ca, f,ld2F,i,<ESC>a "delete arg and insert
+imap <C-s> <ESC>:w<CR>a
 
 " delete surrounding characters
 noremap ds{ F{xf}x

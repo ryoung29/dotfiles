@@ -1,0 +1,7 @@
+tables
+codehilite
+toc
+meta
+sane-lists
+smarty
+fenced_code
