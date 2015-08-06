@@ -12,28 +12,42 @@ noremap <F7> :set expandtab!<CR>
 nmap <Leader>h :tabnew %:h<CR>
 nmap <SPACE> i<SPACE><ESC>
 nmap <CR> i<CR><ESC>
-imap <C-s> <ESC>:w<CR>a
 
-" delete surrounding characters
-noremap ds{ F{xf}x
-noremap cs{ F{xf}xi
-noremap ds" F"x,x
-noremap cs" F"x,xi
-noremap ds' F'x,x
-noremap cs' F'x,xi
-noremap ds( F(xf)x
-noremap cs( F(xf)xi
-noremap ds) F(xf)x
-noremap cs) F(xf)xi
+" list control
+nmap <Leader>l :call ListTrans_toggle_format()<CR>
+vmap <Leader>l :call ListTrans_toggle_format('visual')<CR>
 
+"custom comma motion mapping
+nmap di, f,dT,
+nmap ci, f,cT
+nmap da, f,ld2F,i,<ESC>l "delete argument 
+nmap ca, f,ld2F,i,<ESC>a "delete arg and insert
+
+" change word separated by underscores
 nmap cu ct_
 nmap cU cf_
 
+" colon for semicolon
 nnoremap ; :
+
+" highlighting for next search result
+nnoremap <silent> n   n:call HLNext(0.4)<cr>
+nnoremap <silent> N   N:call HLNext(0.4)<cr>
 
 " Set F5 to insert time
 :nnoremap <F5> "=strftime("%Y-%m-%d")<CR>P
 :inoremap <F5> <C-R>=strftime("%Y-%m-%d")<CR>
+
+" vmath plugin
+vmap <expr> ++ VMATH_YankAndAnalyse()
+nmap        ++ vip++
+
+" Visual drag plugin
+vmap  <expr>  <S-LEFT>   DVB_Drag('left')
+vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
+vmap  <expr>  <S-DOWN>   DVB_Drag('down')
+vmap  <expr>  <S-UP>     DVB_Drag('up')
+vmap  <expr>  D          DVB_Duplicate()
 
 " Set F6 to work wrap
 :nnoremap <F6> :set formatoptions=l<CR>:set lbr<CR>
