@@ -20,8 +20,6 @@ set wildmenu
 set laststatus=2
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
-autocmd FileType text setlocal spell spelllang=en_us
-
 " Mappings in it's own file
 source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/functions.vim
