@@ -41,3 +41,17 @@ function! HLNext (blinktime)
     call matchdelete(ring)
     redraw
 endfunction
+
+func! WordProcessorMode() 
+ setlocal formatoptions=1 
+ setlocal lbr
+ setlocal noexpandtab 
+ setlocal spell spelllang=en_us 
+ set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
+ set complete+=s
+ set formatprg=par
+ setlocal wrap 
+ setlocal linebreak 
+endfu 
+com! WP call WordProcessorMode()
+
