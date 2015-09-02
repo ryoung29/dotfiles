@@ -427,6 +427,45 @@ body .task-list{
   padding-left:10px
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.3em 0 1em;
+  padding: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.6em;
+  border-bottom: 1px solid #ddd;
+  color: #48851B;
+}
+
+h2 {
+  font-size: 1.4em;
+  border-bottom: 1px solid #eee;
+  color: #9ACF17;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: rgb(180,180, 180);
+  font-style:italic;
+}
+
+h4 {
+  font-size: 1.2em;
+  color: #48851B;
+}
+
+h5 {
+  font-size: 1em;
+  color: #9ACF17;
+  font-style:italic;
+}
+
+h6 {
+  font-size: 1em;
+  color: #777;
+}
 .task-list-item{
   padding-left:20px
 }
