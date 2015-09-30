@@ -2,10 +2,12 @@ syntax on
 execute pathogen#infect()
 
 " sets
+set history=500
+set lazyredraw
 set autoindent smartindent
 set tabstop=4
 set shiftwidth=4
-set expandtab                  " spaces instead of tabs
+set expandtab smarttab                 " spaces instead of tabs
 set softtabstop=4              " a soft-tab of four spaces
 set cindent
 set hlsearch

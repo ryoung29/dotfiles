@@ -1,11 +1,9 @@
 date +"%B %d %Y %r"
 echo "Greetings, Robert!"
 
-alias todo=/home/robert/todo.sh
 alias dd=sudo dcfldd
 alias du=ncdu
 alias exot=exit
-alias weather=/home/robert/Documents/Code/Bash/weather.sh
 
 function cdl
     cd $argv; and ls
@@ -26,6 +24,10 @@ end
 
 function startSL
     VBoxHeadless --startvm StarLiMS &;
+end
+
+function pauseSL
+    vboxmanage controlvm StarLiMS savestate &;
 end
 
 function killSL
