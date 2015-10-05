@@ -55,3 +55,9 @@ func! WordProcessorMode()
 endfu 
 com! WP call WordProcessorMode()
 
+func! CodeMode()
+    let g:indent_guides_guide_size = 1
+    IndentGuidesEnable
+    setlocal colorcolumn=101
+endfu
+com! CO call CodeMode()

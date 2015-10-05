@@ -27,8 +27,9 @@ nmap ca, f,ld2F,i,<ESC>a "delete arg and insert
 nmap cu ct_
 nmap cU cf_
 
-" colon for semicolon
+" Switch colon for semicolon
 nnoremap ; :
+nnoremap : ;
 
 " highlighting for next search result
 nnoremap <silent> n   n:call HLNext(0.4)<cr>
