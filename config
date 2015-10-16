@@ -40,6 +40,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start surf
+bindsym $mod+Shift+w exec surf file:///home/robert/homepage.html
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -161,6 +164,13 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        colors {
+        #   colorclass          boder   bg      text 
+            focused_workspace   #000000 #D64937 #ffffff
+            active_workspace    #333333 #5f676a #ffffff
+            inactive_workspace  #333333 #222222 #888888
+            urgent_workspace    #2f343a #900000 #ffffff
+        }
 }
 
 bindsym $mod+Shift+y exec i3lock -c 6E7980 -p default -d -n 

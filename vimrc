@@ -15,7 +15,7 @@ set ignorecase smartcase
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set nocompatible
 set backup
-set backupdir=.
+set backupdir=~/.vim/bak
 set number relativenumber
 set autoread
 set wildmenu
