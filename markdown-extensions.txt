@@ -5,3 +5,4 @@ meta
 sane-lists
 smarty
 fenced_code
+footnotes
