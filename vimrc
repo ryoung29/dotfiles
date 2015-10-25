@@ -4,6 +4,7 @@ execute pathogen#infect()
 " sets
 set history=500
 set lazyredraw
+set cursorline
 set autoindent smartindent
 set tabstop=4
 set shiftwidth=4
@@ -20,7 +21,7 @@ set number relativenumber
 set autoread
 set wildmenu
 set laststatus=2
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ Col:\ %c
 filetype plugin indent on
 
 " Mappings in it's own file
