@@ -2,6 +2,7 @@ syntax on
 execute pathogen#infect()
 
 " sets
+set nocp
 set history=500
 set lazyredraw
 set cursorline
@@ -33,15 +34,13 @@ source ~/.vim/startup/dragvisuals.vim
 
 " lets
 let g:vim_markdown_math=1
-let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding=1
 let g:vim_markdown_frontmatter=1
+let g:vim_markdown_disabled=0
+let g:markdown_fenced_laguages = ['html', 'python', 'bash=sh']
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
-let g:vim_markdown_disabled=0
 
 " color and theme
 set t_Co=256
 colors xoria256
-
-au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
-au BufEnter *.md setlocal foldmethod=expr     

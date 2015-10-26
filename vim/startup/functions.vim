@@ -1,26 +1,3 @@
-" Markdown folding
-function! MarkdownLevel()
-    if getline(v:lnum) =~ '^# .*$'
-        return ">1"
-    endif
-    if getline(v:lnum) =~ '^## .*$'
-        return ">2"
-    endif
-    if getline(v:lnum) =~ '^### .*$'
-        return ">3"
-    endif
-    if getline(v:lnum) =~ '^#### .*$'
-        return ">4"
-    endif
-    if getline(v:lnum) =~ '^##### .*$'
-        return ">5"
-    endif
-    if getline(v:lnum) =~ '^###### .*$'
-        return ">6"
-    endif
-    return "=" 
-endfunction
-
 " Helper functions
 " Returns true if paste mode is enabled
 function! HasPaste()
@@ -43,15 +20,15 @@ function! HLNext (blinktime)
 endfunction
 
 func! WordProcessorMode() 
- setlocal formatoptions=1 
- setlocal lbr
- setlocal noexpandtab 
- setlocal spell spelllang=en_us 
- set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
- set complete+=s
- set formatprg=par
- setlocal wrap 
- setlocal linebreak 
+    setlocal formatoptions=1 
+    setlocal lbr
+    setlocal noexpandtab 
+    setlocal spell spelllang=en_us 
+    set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
+    set complete+=s
+    set formatprg=par
+    setlocal wrap 
+    setlocal linebreak 
 endfu 
 com! WP call WordProcessorMode()
 
@@ -61,3 +38,6 @@ func! CodeMode()
     setlocal colorcolumn=101
 endfu
 com! CO call CodeMode()
+
+com! LK normal i[]()<ESC>hh
+com! IM normal i![]()<ESC>hh

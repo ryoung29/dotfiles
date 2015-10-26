@@ -1,7 +1,5 @@
 "============== Custom Mappings ===============
 " general mapping
-let mapleader = ","
-let g:mapleader = ","
 nmap <C-Tab> :tabnext<CR>
 nmap <C-S-Tab> :tabprevious<CR>
 map <C-S-Tab> :tabprevious<CR>
@@ -9,9 +7,10 @@ map <C-Tab> :tabnext<CR>
 imap <C-S-Tab> <ESC>:tabprevious<CR>
 imap <C-Tab> <ESC>:tabnext<CR>
 noremap <F7> :set expandtab!<CR>
-nmap <Leader>h :tabnew %:h<CR>
+noremap <Leader>h :tabnew %:h<CR>
 nmap <SPACE> i<SPACE><ESC>
 nmap <CR> i<CR><ESC>
+noremap <Leader>c :cd %:h<CR>
 
 " list control
 nmap <Leader>l :call ListTrans_toggle_format()<CR>
@@ -53,7 +52,7 @@ vmap  <expr>  D          DVB_Duplicate()
 " Set F6 to work wrap
 :nnoremap <F6> :set formatoptions=l<CR>:set lbr<CR>
 
-" Leader shortcuts
+" Notes shortcuts
 :nnoremap 'n :CtrlP $HOME/Dropbox/Notes<CR>
 :nnoremap 't :NERDTree $HOME/Dropbox/Notes<CR>
 
