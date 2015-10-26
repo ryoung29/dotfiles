@@ -1,0 +1,18 @@
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/bundle/vim-markdown-folding"]
+	path = vim/bundle/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule "vim/bundle/vim-speeddating"]
+	path = vim/bundle/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
