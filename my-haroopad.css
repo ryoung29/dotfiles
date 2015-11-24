@@ -44,3 +44,14 @@ footnotes {
 	font-style: italic;
 	font-weight: 300;
 }
+.company {
+    color:#48851B;
+    font-style:italic;
+}
+
+hr {
+    color: #9ACF17;
+    background-color: #9ACF17;
+    height: 3px;
+    border: none;
+}
