@@ -1,26 +1,8 @@
-/*
-Theme Name: Flat
-Theme URI: https://themeisle.com/themes/flat/
-Author: ThemeIsle
-Author URI: https://themeisle.com
-Description: Flat is a free Blog Theme designed by YoArts. Works nice for a personal blog, magazine ,news or review website.
-Version: 1.7.4
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: flat
-Tags: black, orange, white, white, dark, light, two-columns, responsive-layout, left-sidebar, custom-background, custom-colors, custom-menu, editor-style, post-formats, custom-colors, translation-ready,featured-images, threaded-comments, translation-ready,photoblogging
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
-
-.sticky {}
-.bypostauthor {}
-
 .accent1 {
     min-height: 10px;
     background-color:#48851B;
    }
+
 .title {
     color:#48851B;
     text-align: center;
@@ -33,6 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-style: italic;
     font-weight: 300;
 }
+
 
 h1 {
     color: #48851B;
@@ -47,23 +30,17 @@ h3 {
     font-style:italic;
 }
 
+
 h4 {
     color: #48851B;
 }
 
-footnote {
+small, footnotes {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footnotes {
 	font-size: .8em;
 	font-style: italic;
 	font-weight: 300;
-}
-.company {
-    color:#48851B;
-    font-style:italic;
-}
-
-hr {
-    color: #9ACF17;
-    background-color: #9ACF17;
-    height: 3px;
-    border: none;
 }
