@@ -30,7 +30,7 @@ default_shade_color 112422
 
 override_utf8_locale yes
 use_xft yes
-xftfont Open Sans:size=10
+xftfont Avenir Medium:size=10
 xftalpha 1
 uppercase no
 
@@ -60,12 +60,12 @@ ${color1}${if_up wlan0}${font econ:size=24}+${font Caviar Dreams:size=24}Connect
 ${goto 10}${font econ :size=16}k
 ${font Caviar Dreams:size=16}${goto 28}${voffset -21} ${wireless_essid wlan0}
 ${goto 10}${font econ :size=12}D
-${font Caviar Dreams:size=14}${goto 28}${voffset -21} ${downspeed wlan0}
+${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${downspeed wlan0}
 ${goto 10}${font econ :size=12}I
 ${font Caviar Dreams:size=14}${goto 28}${voffset -21} ${upspeed wlan0}
 ${else}${if_up enp0s25}${if_up enp0s25}${font econ:size=24}y${font Raleway:size=20}LAN
 ${goto 10}${font econ :size=12}D
-${font Open Sans:size=12}${goto 28}${voffset -21} ${downspeed enp0s25}
+${font Avenir Medium:size=12}${goto 28}${voffset -21} ${downspeed wlan0}
 ${goto 10}${font econ :size=12}I
-${font Open Sans:size=12}${goto 28}${voffset -21} ${upspeed enp0s25}
-${else}${font Raleway:size=20}Disconnected${endif}${endif}${endif}
+${font Avenir Medium:size=12}${goto 28}${voffset -21} ${upspeed wlan0}
+${else}${font Raleway:size=20}Disconnected${endif}
