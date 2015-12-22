@@ -38,6 +38,7 @@ let g:vim_markdown_folding=1
 let g:vim_markdown_frontmatter=1
 let g:vim_markdown_disabled=0
 let g:markdown_fenced_laguages = ['html', 'python', 'bash=sh']
+let g:Powerline_symbols = 'fancy'
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 
