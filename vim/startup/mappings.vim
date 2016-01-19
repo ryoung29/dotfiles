@@ -9,8 +9,8 @@ imap <C-Tab> <ESC>:tabnext<CR>
 noremap <F7> :set expandtab!<CR>
 noremap <Leader>h :tabnew %:h<CR>
 nmap <SPACE> i<SPACE><ESC>
-nmap <CR> i<CR><ESC>
 noremap <Leader>c :cd %:h<CR>
+noremap <Leader>n :NERDTreeToggle<CR>
 
 " list control
 nmap <Leader>l :call ListTrans_toggle_format()<CR>
@@ -29,10 +29,6 @@ nmap cU cf_
 " Switch colon for semicolon
 nnoremap ; :
 nnoremap : ;
-
-" highlighting for next search result
-nnoremap <silent> n   n:call HLNext(0.4)<cr>
-nnoremap <silent> N   N:call HLNext(0.4)<cr>
 
 " Set F5 to insert time
 :nnoremap <F5> "=strftime("%Y-%m-%d")<CR>P
@@ -53,8 +49,8 @@ vmap  <expr>  D          DVB_Duplicate()
 :nnoremap <F6> :set formatoptions=l<CR>:set lbr<CR>
 
 " Notes shortcuts
-:nnoremap 'n :CtrlP $HOME/Dropbox/Notes<CR>
-:nnoremap 't :NERDTree $HOME/Dropbox/Notes<CR>
+:nnoremap 'n :CtrlP ~/Dropbox/Notes<CR>
+:nnoremap 't :NERDTree ~/Dropbox/Notes<CR>
 
 " upper or lowercase the current word
 nmap g^ gUiW
@@ -84,6 +80,7 @@ imap <leader>' ''<ESC>i
 imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
+imap <leader>{ {}<ESC>i
 
 "other leader mappings
 nnoremap <Leader>o :CtrlP<CR>
@@ -99,10 +96,3 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
-"abbreviations
-abbr h1 #
-abbr h2 ##
-abbr h3 ###
-abbr h4 ####
-abbr h5 #####

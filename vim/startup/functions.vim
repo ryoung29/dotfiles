@@ -7,30 +7,24 @@ function! HasPaste()
     return ''
 endfunction
 
-" OR ELSE just highlight the match in red...
-function! HLNext (blinktime)
-    let [bufnum, lnum, col, off] = getpos('.')
-    let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
-    let target_pat = '\c\%#\%('.@/.'\)'
-    let ring = matchadd('WhiteOnRed', target_pat, 101)
-    redraw
-    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
-    call matchdelete(ring)
-    redraw
-endfunction
-
-func! WordProcessorMode() 
+func! WordProcessorMode(ft) 
     setlocal formatoptions=1 
     setlocal lbr
     setlocal noexpandtab 
+    setlocal textwidth=100
     setlocal spell spelllang=en_us 
     set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
     set complete+=s
     set formatprg=par
     setlocal wrap 
     setlocal linebreak 
+    if a:ft == "text"
+        setlocal foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
+        setlocal foldmethod=expr
+    endif
 endfu 
-com! WP call WordProcessorMode()
+com! WP call WordProcessorMode("markdown")
+com! WT call WordProcessorMode("text")
 
 func! CodeMode()
     let g:indent_guides_guide_size = 1

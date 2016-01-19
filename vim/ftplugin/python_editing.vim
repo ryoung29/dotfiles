@@ -7,6 +7,9 @@ let b:did_ftplugin = 1
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 map <buffer> gd /def <C-R><C-W><CR> 
 
+inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
+inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
+
 set foldmethod=expr
 set foldexpr=PythonFoldExpr(v:lnum)
 set foldtext=PythonFoldText()
