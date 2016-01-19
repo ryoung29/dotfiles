@@ -45,8 +45,6 @@ filetype plugin indent on
 " Other sources
 source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/functions.vim
-source ~/.vim/startup/vmath.vim
-source ~/.vim/startup/vmath.vim
 source ~/.vim/startup/dragvisuals.vim
 
 " lets
