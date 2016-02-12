@@ -20,7 +20,7 @@ own_window_type override
 own_window_transparent yes
 border_inner_margin 0
 border_outer_margin 0
-alignment mr
+alignment ml
 
 draw_shades yes
 draw_outline no
