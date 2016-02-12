@@ -1,25 +1,16 @@
 "============== Custom Mappings ===============
 " general mapping
-nmap <C-Tab> :tabnext<CR>
-nmap <C-S-Tab> :tabprevious<CR>
-map <C-S-Tab> :tabprevious<CR>
-map <C-Tab> :tabnext<CR>
-imap <C-S-Tab> <ESC>:tabprevious<CR>
-imap <C-Tab> <ESC>:tabnext<CR>
 noremap <F7> :set expandtab!<CR>
 noremap <Leader>h :tabnew %:h<CR>
 nmap <SPACE> i<SPACE><ESC>
 noremap <Leader>c :cd %:h<CR>
 noremap <Leader>n :NERDTreeToggle<CR>
-
-" list control
-nmap <Leader>l :call ListTrans_toggle_format()<CR>
-vmap <Leader>l :call ListTrans_toggle_format('visual')<CR>
+map <F3> mzgg=G`z
 
 "custom comma motion mapping
 nmap di, f,dT,
 nmap ci, f,cT
-nmap da, f,ld2F,i,<ESC>l "delete argument 
+nmap da, f,ld2F,i,<ESC>l "delete argument
 nmap ca, f,ld2F,i,<ESC>a "delete arg and insert
 
 " change word separated by underscores
@@ -45,8 +36,8 @@ vmap  <expr>  <S-DOWN>   DVB_Drag('down')
 vmap  <expr>  <S-UP>     DVB_Drag('up')
 vmap  <expr>  D          DVB_Duplicate()
 
-" Set F6 to work wrap
-:nnoremap <F6> :set formatoptions=l<CR>:set lbr<CR>
+" Set F6 to word wrap
+:nnoremap <silent> <F6> :set formatoptions=l<CR>:set lbr<CR>
 
 " Notes shortcuts
 :nnoremap 'n :CtrlP ~/Dropbox/Notes<CR>
@@ -81,18 +72,13 @@ imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
 imap <leader>{ {}<ESC>i
-
-"other leader mappings
-nnoremap <Leader>o :CtrlP<CR>
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
+imap <leader>% %  %<ESC>hi
 
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Other
+nmap <silent> <BS> :nohlsearch<CR>
