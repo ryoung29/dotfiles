@@ -24,6 +24,7 @@ if has("gui_running")
   else
     set guifont=Courier_New:h11:cDEFAULT
   endif
+  set lines=30 columns=100
 endif
 
 " Look and Feel
