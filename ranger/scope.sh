@@ -54,7 +54,7 @@ case "$extension" in
         try unrar -p- lt "$path" && { dump | trim; exit 0; } || exit 1;;
     # PDF documents:
     pdf)
-        try pdftotext -l 10 -nopgbrk -q "$path" - && \
+        try pdftotext -layout -l 10 -nopgbrk -q "$path" - && \
             { dump | trim | fmt -s -w $width; exit 0; } || exit 1;;
     # BitTorrent Files
     torrent)
