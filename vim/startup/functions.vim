@@ -14,7 +14,7 @@ func! WordProcessorMode(ft)
     setlocal textwidth=100
     setlocal spell spelllang=en_us 
     set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
-    set complete+=s
+    set complete+=s,k
     set formatprg=par
     setlocal wrap 
     setlocal linebreak 
@@ -35,3 +35,16 @@ com! CO call CodeMode()
 
 com! LK normal i[]()<ESC>hh
 com! IM normal i![]()<ESC>hh
+
+function! SaveWithTS(filename) range
+    let l:extension = '.' . fnamemodify( a:filename, ':e' )
+    if len(l:extension) == 1
+        let l:extension = '.md'
+    endif
+
+    let l:filename = escape( strftime("%Y%m%d ") . fnamemodify(a:filename, ':r') . l:extension, ' ' )
+
+    execute "write " . l:filename
+endfunction
+
+com! -nargs=1 SWT call SaveWithTS( <q-args> )
