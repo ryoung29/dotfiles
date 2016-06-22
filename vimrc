@@ -3,13 +3,16 @@ syntax on
 filetype plugin indent on
 execute pathogen#infect()
 set nocp
-:se autochdir                   " auto change dir to opened file
+set autochdir                   " auto change dir to opened file
 set history=500
 set nocompatible
 set backup
 set backupdir=~/.vim/bak
 set pastetoggle=<F2>
 set autoread
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
 
 " set gui font
 if has("gui_running")
@@ -24,7 +27,6 @@ if has("gui_running")
   else
     set guifont=Courier_New:h12:cDEFAULT
   endif
-  set lines=30 columns=100
 endif
 
 " Look and Feel
