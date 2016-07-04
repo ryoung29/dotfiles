@@ -42,7 +42,8 @@ set laststatus=2
 set statusline=%{HasPaste()}%r%{getcwd()}\\%t%h%m%r%y%=[%{strlen(&fenc)?&fenc:'none'},%{&ff}]\ %l,%c/%L\ %P
 " color and theme
 set t_Co=256
-colors desert256
+colors gruvbox
+set background=dark
 
 " search
 set ignorecase smartcase
