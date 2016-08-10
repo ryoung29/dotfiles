@@ -67,7 +67,9 @@ source ~/.vim/startup/dragvisuals.vim
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 let g:Powerline_symbols = 'fancy'
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+let g:markdown_foldlevel=1
+let g:markdown_fold_style='nested'
+let g:markdown_fenced_languages = ['javascript', 'html', 'python', 'bash=sh']
 
 "python as IDE
 let g:pymode_syntax=1
@@ -78,6 +80,9 @@ let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
 
+" Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsEnableSnipMate = 1
