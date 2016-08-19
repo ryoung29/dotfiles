@@ -6,9 +6,7 @@ alias dd="sudo dcfldd"
 alias du=ncdu
 alias exot=exit
 alias free="free -m"
-set fish_color_redirection white --bold
-export set WORKON_HOME=Envs
-fish_vi_mode
+export set WORKON_HOME=/home/robert/Envs
 fish_vi_key_bindings
 fish_vi_cursor
 
@@ -37,18 +35,26 @@ alias lsenvs="ls $WORKON_HOME"
 
 function -d "Like virtualenvwrapper for python2" mkvirtualenv2
     virtualenv -p python2 $WORKON_HOME/$argv;
-    and source $WORKON_HOME/$argv/bin/activate.fish
+    and source $WORKON_HOME/$argv/bin/activate.fish;
+    and echo "Virtual environment created."
 end
 
 function -d "Like virtualenvwrapper" mkvirtualenv
     virtualenv -p python3 $WORKON_HOME/$argv;
-    and source $WORKON_HOME/$argv/bin/activate.fish
+    and source $WORKON_HOME/$argv/bin/activate.fish;
+    and echo "Virtual environment created."
 end
 
 function workon
-    source $WORKON_HOME/$argv/bin/activate.fish
+    source $WORKON_HOME/$argv/bin/activate.fish; and echo "Switch to virtual environment."
 end
 
 function -d "Like virtualenvwrapper" rmvirtualenv
-    deactivate; and rm -rf $WORKON_HOME/$argv^/dev/null; or rm -rf $WORKON_HOME/$argv
+    if test -n "$VIRTUAL_ENV"
+        deactivate
+    end
+    rm -rf $WORKON_HOME/$argv; and echo "Virtual environment deleted."
 end
+
+# Environment Variables
+export set TERMINAL=/usr/bin/xterm
