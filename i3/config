@@ -16,6 +16,7 @@ exec --no-startup-id nm-applet
 exec dropbox start
 exec synology-cloud-station-drive
 exec /home/robert/.conky/Conky2.sh
+exec gnome-settings-daemon
 
 # Colors
 # Class             border  backgr. text    indicator
@@ -38,10 +39,10 @@ font pango:Monaco 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal --profile i3
 
 # start surf
-bindsym $mod+Shift+w exec firefox
+bindsym $mod+Shift+w exec surf ~/homepage.html
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -177,8 +178,8 @@ bar {
 
 # Extra Key bindings
 bindsym $mod+Shift+y exec i3lock -c 6E7980 -p default -d -n 
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q -c 1 set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q -c 1 set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q -c 1 set Master toggle
 bindsym XF86MonBrightnessUp exec ~/bin/BrightUp
 bindsym XF86MonBrightnessDown exec ~/bin/BrightDown
