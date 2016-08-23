@@ -51,11 +51,6 @@ nmap gv guiW
 nmap ]c ]czz
 nmap [c [czz
 
-" gO to create a new line below cursor in normal mode
-nmap g<C-O> o<ESC>k
-" g<Ctrl+o> to create a new line above cursor (Ctrl to prevent collision with 'go' command)
-nmap gO O<ESC>j
-
 "I really hate that things don't auto-center
 nmap G Gzz
 nmap n nzz
