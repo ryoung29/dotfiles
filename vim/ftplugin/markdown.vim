@@ -12,5 +12,7 @@ abbr h4 ####
 abbr h5 #####
 
 " Other Markdown stuff
-nmap hd :HeaderDecrease<CR>
-nmap hi :HeaderIncrease<CR>
+nmap hd :.HeaderDecrease<CR>
+nmap hi :.HeaderIncrease<CR>
+
+set sw=4
