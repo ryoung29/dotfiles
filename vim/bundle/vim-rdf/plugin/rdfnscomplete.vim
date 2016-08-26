@@ -1,8 +1,8 @@
 "===============================================================
 " RDF Vocabulary Namespace Completion for Vim 7+
 " Maintainer: Niklas Lindström <lindstream@gmail.com>
-" Version: 1.4.1
-" Updated: 2015-08-26
+" Version: 1.4.2
+" Updated: 2016-04-08
 " Published: 2007-03-25
 " URL: <http://www.vim.org/scripts/script.php?script_id=1835>
 "===============================================================
@@ -59,4 +59,43 @@ func! s:RdfnsArgs(A,L,P)
     return "reload\nquit"
 endfunc
 
-command! -complete=custom,s:RdfnsArgs -nargs=* RDF :call rdfnscomplete#setup(<f-args>)
+command! -complete=custom,s:RdfnsArgs -nargs=* RDF :call <SID>RDFSetup(<f-args>)
+
+func! s:RDFSetup(...)
+    if a:0 > 0
+        call rdfnscomplete#setup(a:1)
+        if a:1 == 'quit'
+            nunmap <buffer> <leader>d
+        endif
+    else
+        call rdfnscomplete#setup()
+        nnoremap <buffer> <leader>d :call <SID>OpenRDFTerm()<CR>
+    endif
+endfunc
+
+func! s:OpenRDFTerm()
+    let pname = expand("<cWORD>")
+    let pname = substitute(pname, '^[\^]\+\|[,;]$', "", 'g')
+    let colonidx = stridx(pname, ':')
+    if colonidx == -1
+        return
+    endif
+    let pfx = colonidx? pname[0:colonidx-1] : ''
+    let lname = pname[colonidx+1:]
+    let uri = rdfnscomplete#expand_pfx(pfx)
+    try
+        let fspath = rdfnscomplete#fspath(uri)
+    catch
+        let fspath = ''
+    endtry
+    if fspath != ''
+        let fpath = fnameescape(fspath)
+        if bufloaded(fspath)
+            exec "sb ". fpath
+        else
+            exec "sp ". fpath
+        endif
+        let lpfx = rdfnscomplete#to_pfx(uri)
+        call search('^'. lpfx .':'. lname)
+    endif
+endfunc

@@ -67,6 +67,26 @@ func! rdfnscomplete#setup(...)
 endfunc
 
 
+func! rdfnscomplete#includeexpr(uri)
+    return pyeval("rdfns_tool.graphcache.get_fs_path(vim.eval('a:uri'))")
+endfunc
+
+
+func! rdfnscomplete#fspath(uri)
+    return pyeval("rdfns_tool.graphcache.get_fs_path(vim.eval('a:uri'))")
+endfunc
+
+
+func! rdfnscomplete#expand_pfx(pfx)
+    return pyeval("rdfns_tool.expand_pfx(vim.current.buffer, vim.eval('a:pfx'))")
+endfunc
+
+
+func! rdfnscomplete#to_pfx(uri)
+    return pyeval("rdfns_tool.to_pfx(vim.current.buffer, vim.eval('a:uri'))")
+endfunc
+
+
 " TODO: show label and comment for term/vocab under cursor
 "
 "func! rdfnscomplete#balloon()
