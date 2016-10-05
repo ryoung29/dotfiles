@@ -56,17 +56,17 @@ ${goto 10}${font Caviar Dreams:size=13}Cpu7: ${cpu cpu7}%${goto 130}Cpu8: ${cpu 
 
 ${goto 10}Ram: ${memperc}%${goto 130}Swap: $swapperc%
 
-${if_up wlp3s0}${font econ:size=24}+${font Caviar Dreams:size=24}Connection${font Caviar Dreams:weight=Light:size=15}   ${wireless_link_qual_perc wlp3s0}%
+${if_existing /proc/net/route wlp2s0}${font econ:size=24}+${font Caviar Dreams:size=24}Connection${font Caviar Dreams:weight=Light:size=15}   ${wireless_link_qual_perc wlp2s0}%
 
 ${goto 10}${font econ :size=16}k
-${font Caviar Dreams:size=16}${goto 28}${voffset -21} ${wireless_essid wlp3s0}
+${font Caviar Dreams:size=16}${goto 28}${voffset -21} ${wireless_essid wlp2s0}
 ${goto 10}${font econ :size=12}D
-${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${downspeed wlp3s0}
+${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${downspeed wlp2s0}
 ${goto 10}${font econ :size=12}I
-${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${upspeed wlp3s0}
+${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${upspeed wlp2s0}
 ${else}${if_up enp0s25}${font Raleway:size=20}LAN
 ${goto 10}${font econ :size=12}D
-${font Avenir Medium:size=12}${goto 28}${voffset -21} ${downspeed wlp3s0}
+${font Avenir Medium:size=12}${goto 28}${voffset -21} ${downspeed enp0s25}
 ${goto 10}${font econ :size=12}I
-${font Avenir Medium:size=12}${goto 28}${voffset -21} ${upspeed wlp3s0}
+${font Avenir Medium:size=12}${goto 28}${voffset -21} ${upspeed enp0s25}
 ${else}${font Raleway:size=20}Disconnected${endif}${endif}

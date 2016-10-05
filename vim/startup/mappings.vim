@@ -40,8 +40,8 @@ vmap  <expr>  D          DVB_Duplicate()
 :nnoremap <silent> <F6> :set formatoptions=l<CR>:set lbr<CR>
 
 " Notes shortcuts
-:nnoremap 'n :CtrlP ~/Dropbox/Notes<CR>
-:nnoremap 't :NERDTree ~/Dropbox/Notes<CR>
+:nnoremap 'n :CtrlP ~/Documents/Dropbox/Notes<CR>
+:nnoremap 't :NERDTree ~/Documents/Dropbox/Notes<CR>
 
 " upper or lowercase the current word
 nmap g^ gUiW

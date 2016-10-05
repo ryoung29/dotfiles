@@ -58,3 +58,4 @@ end
 
 # Environment Variables
 export set TERMINAL=/usr/bin/xterm
+set -x PATH $PATH $HOME/bin
