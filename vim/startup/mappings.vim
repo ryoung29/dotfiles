@@ -76,4 +76,4 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Other
-nmap <silent> <BS> :nohlsearch<CR>
+noremap <silent> <BS> :nohlsearch<CR>
