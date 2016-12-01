@@ -16,6 +16,8 @@ cmap w!! w !sudo tee > /dev/null %
 
 " set gui font
 if has("gui_running")
+  set lines=25
+  set columns=86
   if has("gui_gtk2")
     set guifont=Input\ Mono\ Regular\ 12
   elseif has("gui_photon")
@@ -81,10 +83,9 @@ let g:pymode_rope_extended_complete = 1
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEnableSnipMate = 1
 let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsEnableSnipMate = 1
-let g:UltiSnipsEnableSnipMate = 1
+let g:ultisnips_python_style = "google"
 
 " Markdown stuff
 let g:markdown_foldlevel=1
