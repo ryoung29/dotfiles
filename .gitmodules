@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim/bundle/vim-titlecase"]
+	path = vim/bundle/vim-titlecase
+	url = https://github.com/christoomey/vim-titlecase.git
