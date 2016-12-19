@@ -1,0 +1,39 @@
+priority -50
+
+snippet class "New Class" b
+#
+# http://reference.ryoung29.me/ontologies/laboratory#${1:NewClass}
+
+:$1 a owl:Class ;
+	rdfs:label "${2:$1}" $0
+endsnippet
+
+snippet ob "New Object Property" b
+#
+# http://reference.ryoung29.me/ontologies/laboratory#${1:NewProp}
+
+:$1 a owl:ObjectProperty ;
+	rdfs:label "${2:$1}" $0
+endsnippet
+
+snippet dat "New Class" b
+#
+# http://reference.ryoung29.me/ontologies/laboratory#${1:NewProp}
+
+:$1 a owl:DatatypeProperty ;
+	rdfs:label "${2:$1}"^^xsd:$3 $0
+endsnippet
+
+snippet orest "Restriction on object" b
+[ a owl:Restriction ;
+	owl:onProperty $1 ;
+	owl:${2:cardinality} "${3:0}"^^xsd:${4:nonNegativeInteger} ;
+	owl:onClass $5 ] $0
+endsnippet
+
+snippet drest "Restriction on datatype" b
+[ a owl:Restriction ;
+	owl:onProperty $1 ;
+	owl:${2:cardinality} "${3:0}"^^xsd:${4:nonNegativeInteger} ;
+	owl:onDataRange xsd:$5 ] $0
+endsnippet

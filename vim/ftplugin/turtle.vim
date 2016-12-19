@@ -2,3 +2,11 @@ abbr def skos:definition
 abbr pref skos:prefLabel
 abbr alt skos:altLabel
 abbr sub rdfs:subClassOf
+abbr nn xsd:nonNegativeInteger
+abbr bool xsd:boolean
+abbr str xsd:string
+abbr dt xsd:dateTime
+abbr dts xsd:dateTimeStamp
+abbr int xsd:integer
+abbr lit xsd:Literal
+abbr label rdfs:label
