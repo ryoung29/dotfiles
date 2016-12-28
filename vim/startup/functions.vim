@@ -29,12 +29,9 @@ com! WT call WordProcessorMode("text")
 func! CodeMode()
     let g:indent_guides_guide_size = 1
     IndentGuidesEnable
-    setlocal colorcolumn=101
+    setlocal colorcolumn=81
 endfu
 com! CO call CodeMode()
-
-com! LK normal i[]()<ESC>hh
-com! IM normal i![]()<ESC>hh
 
 function! SaveWithTS(filename) range
     let l:extension = '.' . fnamemodify( a:filename, ':e' )
@@ -42,7 +39,7 @@ function! SaveWithTS(filename) range
         let l:extension = '.md'
     endif
 
-    let l:filename = escape( strftime("%Y%m%d ") . fnamemodify(a:filename, ':r') . l:extension, ' ' )
+    let l:filename = escape( strftime("%Y%m%d_") . fnamemodify(a:filename, ':r') . l:extension, ' ' )
 
     execute "write " . l:filename
 endfunction
