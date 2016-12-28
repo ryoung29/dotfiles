@@ -51,6 +51,8 @@ set background=dark
 set ignorecase smartcase
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildmenu
+set wildignore+=*.pyc
+set wildignore+=*.bak
 
 " Indenting
 set autoindent smartindent
@@ -78,6 +80,7 @@ let g:pymode_builtin_funcs=1
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
+set completeopt=longest,menuone
 
 " Snippets
 let g:UltiSnipsExpandTrigger="<tab>"

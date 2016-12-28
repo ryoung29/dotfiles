@@ -36,12 +36,17 @@ vmap  <expr>  <S-DOWN>   DVB_Drag('down')
 vmap  <expr>  <S-UP>     DVB_Drag('up')
 vmap  <expr>  D          DVB_Duplicate()
 
+" Python Mode
+map <Leader>b Oimport ipdb; ipbdb.set_trace()  # BREAKPOINT<C-c>
+inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
+inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
+
 " Set F6 to word wrap
 :nnoremap <silent> <F6> :set formatoptions=l<CR>:set lbr<CR>
 
 " Notes shortcuts
-:nnoremap 'n :CtrlP ~/Documents/Dropbox/Notes<CR>
-:nnoremap 't :NERDTree ~/Documents/Dropbox/Notes<CR>
+:nnoremap 'n :CtrlP ~/Documents/Code/Notes<CR>
+:nnoremap 't :NERDTree ~/Documents/Code/Notes<CR>
 
 " upper or lowercase the current word
 nmap g^ gUiW

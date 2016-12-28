@@ -45,3 +45,14 @@ function! SaveWithTS(filename) range
 endfunction
 
 com! -nargs=1 SWT call SaveWithTS( <q-args> )
+
+function! OmniPopup(action)
+    if pumvisible()
+        if a:action == 'j'
+            return "\<C-N>"
+        elseif a:action == 'k'
+            return "\<C-P>"
+        endif
+    endif
+    return a:action
+endfunction
