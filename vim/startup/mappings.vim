@@ -72,6 +72,7 @@ imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
 imap <leader>{ {}<ESC>i
+imap <leader>< <><ESC>i
 imap <leader>% %  %<ESC>hi
 
 " Smart way to move between windows
@@ -82,3 +83,7 @@ map <C-l> <C-W>l
 
 " Other
 noremap <silent> <BS> :nohlsearch<CR>
+
+" Clipboard html to markdown
+noremap <silent> <leader>pp :r ! html_clip_to_markdown<CR>
+noremap <leader>fd :%! formd -r<CR>
