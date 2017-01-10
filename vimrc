@@ -54,6 +54,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildmenu
 set wildignore+=*.pyc
 set wildignore+=*.bak
+let g:ackprg = 'ag --vimgrep --smart-case'    " Use silver-searcher instead of ack
 
 " Indenting
 set autoindent smartindent
