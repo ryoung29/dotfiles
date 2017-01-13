@@ -20,13 +20,13 @@ if has("gui_running")
   set lines=25
   set columns=86
   if has("gui_gtk2")
-    set guifont=Input\ Mono\ Regular\ 12
+    set guifont=Hack\ Regular\ 12
   elseif has("gui_photon")
-    set guifont=Input\ Mono\ Regular:s12
+    set guifont=Hack\ Regular:s12
   elseif has("gui_kde")
-    set guifont=Input\ Mono\ Regular/12/-1/5/50/0/0/0/1/0
+    set guifont=Hack\ Regular/12/-1/5/50/0/0/0/1/0
   elseif has("x11")
-    set guifont=-*-input-mono-r-regular-*-*-180-*-*-m-*-*
+    set guifont=-*-hack-r-regular-*-*-180-*-*-m-*-*
   else
     set guifont=Courier_New:h12:cDEFAULT
   endif

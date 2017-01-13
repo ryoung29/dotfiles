@@ -13,7 +13,6 @@ set $mod Mod4
 
 # startup items
 exec --no-startup-id nm-applet
-# exec dropbox start
 exec synology-cloud-station-drive
 exec /home/robert/.conky/Conky2.sh
 exec gnome-settings-daemon
@@ -33,7 +32,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Monaco 12
+font pango:Hack 14
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -41,7 +40,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec gnome-terminal --profile i3
 
-# start surf
+# start browser
 bindsym $mod+Shift+w exec surf ~/homepage.html
 
 # start gvim
