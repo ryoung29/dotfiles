@@ -37,7 +37,7 @@ vmap  <expr>  <S-UP>     DVB_Drag('up')
 vmap  <expr>  D          DVB_Duplicate()
 
 " Python Mode
-map <Leader>b Oimport ipdb; ipbdb.set_trace()  # BREAKPOINT<C-c>
+map <Leader>b Oimport ipdb; ipdb.set_trace()  # BREAKPOINT<C-c>
 inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
@@ -45,7 +45,8 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 :nnoremap <silent> <F6> :set formatoptions=l<CR>:set lbr<CR>
 
 " Notes shortcuts
-:nnoremap 'n :CtrlP ~/Documents/Code/Notes<CR>
+":nnoremap 'n :CtrlP ~/Documents/Code/Notes<CR>
+:nnoremap 'n :FZF ~/Documents/Code/Notes<CR>
 :nnoremap 't :NERDTree ~/Documents/Code/Notes<CR>
 
 " upper or lowercase the current word

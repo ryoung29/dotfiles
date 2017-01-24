@@ -11,6 +11,9 @@ set backupdir=~/.vim/bak
 set pastetoggle=<F2>
 set autoread
 set shell=/bin/bash
+set encoding=utf8
+set ffs=unix,dos,mac
+set rtp+=~/.fzf
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
@@ -20,6 +23,8 @@ if has("gui_running")
   set lines=25
   set columns=86
   if has("gui_gtk2")
+    set guifont=Hack\ Regular\ 12
+  elseif has("gui_gtk3")
     set guifont=Hack\ Regular\ 12
   elseif has("gui_photon")
     set guifont=Hack\ Regular:s12
@@ -50,11 +55,9 @@ set background=dark
 
 " search
 set ignorecase smartcase
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildmenu
-set wildignore+=*.pyc
-set wildignore+=*.bak
-let g:ackprg = 'ag --vimgrep --smart-case'    " Use silver-searcher instead of ack
+set wildignore+=*.o,*.pyc,*.bak
 
 " Indenting
 set autoindent smartindent
@@ -70,8 +73,8 @@ source ~/.vim/startup/vmath.vim
 source ~/.vim/startup/dragvisuals.vim
 
 " lets
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
+"let g:ctrlp_map='<c-p>'
+"let g:ctrlp_cmd='CtrlP'
 let g:airline_powerline_fonts = 1
 
 "python as IDE
@@ -82,6 +85,7 @@ let g:pymode_builtin_funcs=1
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
+autocmd BufWrite *.py :call DeleteTrailingWS()
 set completeopt=longest,menuone
 
 " Snippets
