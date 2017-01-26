@@ -76,6 +76,7 @@ source ~/.vim/startup/dragvisuals.vim
 "let g:ctrlp_map='<c-p>'
 "let g:ctrlp_cmd='CtrlP'
 let g:airline_powerline_fonts = 1
+let g:titlecase_map_keys = 0    " interferes with tabswitch
 
 "python as IDE
 let g:pymode_syntax=1
@@ -85,6 +86,7 @@ let g:pymode_builtin_funcs=1
 let ropevim_enable_shortcuts = 1
 let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
+let g:pymode_rope_lookup_project = 1
 autocmd BufWrite *.py :call DeleteTrailingWS()
 set completeopt=longest,menuone
 
@@ -98,7 +100,7 @@ let g:ultisnips_python_style = "google"
 
 " Markdown stuff
 let g:markdown_foldlevel=1
-let g:markdown_fenced_languages = ['javascript', 'html', 'python', 'bash=sh']
+let g:markdown_fenced_languages = ['R', 'javascript', 'html', 'python', 'bash=sh']
 let g:markdown_fold_style = 'nested'
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_math=1
