@@ -87,4 +87,11 @@ noremap <silent> <BS> :nohlsearch<CR>
 
 " Clipboard html to markdown
 noremap <silent> <leader>pp :r ! html_clip_to_markdown<CR>
+
+" Formd shortcut
 noremap <leader>fd :%! formd -r<CR>
+
+" Title-case remaps
+nmap <leader>gt <Plug>Titlecase
+vmap <leader>gt <Plug>Titlecase
+nmap <leader>gT <Plug>TitlecaseLine
