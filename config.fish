@@ -8,7 +8,7 @@ alias exot=exit
 alias free="free -m"
 export set WORKON_HOME=/home/robert/Envs
 fish_vi_key_bindings
-fish_vi_cursor
+# fish_vi_cursor
 
 # shortcut functions
 
@@ -31,7 +31,7 @@ end
 
 # virtualenvwrapper-like functionality
 
-alias lsenvs="ls $WORKON_HOME"
+alias lsenvs="ls -m $WORKON_HOME | sed 's/\///g'"
 
 function -d "Like virtualenvwrapper for python2" mkvirtualenv2
     virtualenv -p python2 $WORKON_HOME/$argv;
@@ -59,3 +59,4 @@ end
 # Environment Variables
 export set TERMINAL=/usr/bin/xterm
 set -x PATH $PATH $HOME/bin
+set -x VIRTUAL_ENV_DISABLE_PROMPT 1
