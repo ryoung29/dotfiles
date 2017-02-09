@@ -62,3 +62,9 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
+
+func! Print2Python3()
+    exe "normal mz"
+    %s/print (["'].\+["']\)/print(\1)/ge
+    exe "normal `z"
+endfunc
