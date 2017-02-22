@@ -65,6 +65,8 @@ endfunc
 
 func! Print2Python3()
     exe "normal mz"
-    %s/print (["'].\+["']\)/print(\1)/ge
+    %s/print \(["'].\+$\)/print(\1)/ge
     exe "normal `z"
 endfunc
+
+com! PyP3 call Print2Python3()
