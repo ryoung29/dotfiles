@@ -86,3 +86,10 @@ function! ReFold()
     echo 
 endfunction
 
+func! Print2Python3()
+    exe "normal mz"
+    %s/print \(["'].\+$\)/print(\1)/ge
+    exe "normal `z"
+endfunc
+
+com! Py3P call Print2Python3()

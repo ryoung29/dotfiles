@@ -100,7 +100,7 @@ let g:ultisnips_python_style = "google"
 
 " Markdown stuff
 let g:markdown_foldlevel=1
-let g:markdown_fenced_languages = ['R', 'javascript', 'html', 'python', 'bash=sh']
+let g:markdown_fenced_languages = ['r', 'javascript', 'html', 'python', 'bash=sh']
 let g:markdown_fold_style = 'nested'
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_math=1
