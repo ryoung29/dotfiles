@@ -46,3 +46,6 @@
 [submodule "vim/bundle/fzf.vim"]
     path = vim/bundle/fzf.vim
     url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

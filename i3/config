@@ -15,7 +15,7 @@ set $mod Mod4
 exec --no-startup-id nm-applet
 exec synology-cloud-station-drive
 exec /home/robert/.conky/Conky2.sh
-exec gnome-settings-daemon
+exec --no-startup-id unity-settings-daemon
 
 # Colors
 # Class                 border  backgr. text    indicator
@@ -166,7 +166,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks -c ~/.i3/i3blocks.conf
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
         colors {
         #   colorclass          boder   bg      text
             focused_workspace   #000000 #5294E2 #ffffff

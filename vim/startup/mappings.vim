@@ -38,8 +38,6 @@ vmap  <expr>  D          DVB_Duplicate()
 
 " Python Mode
 map <Leader>b Oimport ipdb; ipdb.set_trace()  # BREAKPOINT<C-c>
-inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
-inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
 " Set F6 to word wrap
 :nnoremap <silent> <F6> :set formatoptions=l<CR>:set lbr<CR>

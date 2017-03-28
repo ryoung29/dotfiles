@@ -1,3 +1,5 @@
+runtime ../bundle/python-mode/ftplugin/python/pymode.vim
+
 " Only do this when not done yet for this buffer
 if exists("b:did_ftplugin")
 finish
@@ -85,15 +87,3 @@ function! ReFold()
     set foldtext=PythonFoldText()
     echo 
 endfunction
-
-func! Print2Python3()
-    exe "normal mz"
-    %s/print \(["'].\+$\)/print(\1)/ge
-    exe "normal `z"
-endfunc
-
-com! Py3P call Print2Python3()
-
-abbr pandas import pandas as pd
-abbr numpy import numpy as np
-abbr matplot import matplotlib.pyplot as plt
