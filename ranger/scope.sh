@@ -66,6 +66,8 @@ case "$extension" in
         try elinks -dump "$path" && { dump | trim | fmt -s -w $width; exit 4; }
         ;; # fall back to highlight/cat if the text browsers fail
 
+    odt)  # Requires odt2txt
+        try odt2txt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     mp3|ogg)
         exiftool "$path" && exit 5
         # Use sed to remove spaces so the output fits into the narrow window
