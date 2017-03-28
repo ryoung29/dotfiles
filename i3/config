@@ -175,7 +175,7 @@ bar {
             urgent_workspace    #2f343a #900000 #ffffff
         }
         position top
-        font pango:Monaco 11
+        font pango:Hack 11
 }
 
 # Extra Key bindings
