@@ -1,4 +1,5 @@
 " Generic
+" Remember to hard-link to python-mode syntax file for django highlighting
 syntax on
 filetype plugin indent on
 execute pathogen#infect()
