@@ -7,12 +7,6 @@ noremap <Leader>c :cd %:h<CR>
 noremap <Leader>n :NERDTreeToggle<CR>
 map <F3> mzgg=G`z
 
-"custom comma motion mapping
-nmap di, f,dT,
-nmap ci, f,cT
-nmap da, f,ld2F,i,<ESC>l "delete argument
-nmap ca, f,ld2F,i,<ESC>a "delete arg and insert
-
 " change word separated by underscores
 nmap cu ct_
 nmap cU cf_
@@ -38,6 +32,8 @@ vmap  <expr>  D          DVB_Duplicate()
 
 " Python Mode
 map <Leader>b Oimport ipdb; ipdb.set_trace()  # BREAKPOINT<C-c>
+nnoremap <silent> <Leader>jj :set ft=django<CR>:set syntax=python<CR>
+nnoremap <silent> <Leader>JJ :set ft=python<CR>
 
 " Set F6 to word wrap
 :nnoremap <silent> <F6> :set formatoptions=l<CR>:set lbr<CR>
