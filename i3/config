@@ -41,7 +41,7 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal --profile i3
 
 # start browser
-bindsym $mod+Shift+w exec surf ~/homepage.html
+bindsym $mod+Shift+w exec surf ~/homepage/homepage.html
 
 # start gvim
 bindsym $mod+Shift+v exec gvim
