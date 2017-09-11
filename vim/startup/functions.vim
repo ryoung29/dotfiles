@@ -62,3 +62,4 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
+com! NoWS call DeleteTrailingWS()
