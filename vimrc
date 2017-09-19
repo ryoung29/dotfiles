@@ -15,6 +15,7 @@ set shell=/bin/bash
 set encoding=utf8
 set ffs=unix,dos,mac
 set rtp+=~/.fzf
+set listchars=eol:¬,trail:·,tab:▶-
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
@@ -78,6 +79,8 @@ source ~/.vim/startup/dragvisuals.vim
 "let g:ctrlp_cmd='CtrlP'
 let g:airline_powerline_fonts = 1
 let g:titlecase_map_keys = 0    " interferes with tabswitch
+let g:vimwiki_list = [{'path':'/home/robert/apps/vimwiki', 'path_html':'/home/robert/apps/vimwiki_html'}]
+let g:vimwiki_listsyms = ' ✗○◐✓'
 
 "python as IDE
 let g:pymode_syntax=1

@@ -8,14 +8,14 @@ function! HasPaste()
 endfunction
 
 func! WordProcessorMode(ft)
-    setlocal formatoptions=1
+    setlocal formatoptions=tan1
     setlocal lbr
     setlocal noexpandtab
     setlocal textwidth=100
     setlocal spell spelllang=en_us
     set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
     set complete+=s,k
-    set formatprg="par -w 100"
+    set formatprg=par\ -w100
     setlocal wrap
     setlocal linebreak
     if a:ft == "text"
