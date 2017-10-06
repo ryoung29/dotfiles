@@ -27,6 +27,7 @@ com! WP call WordProcessorMode("markdown")
 com! WT call WordProcessorMode("text")
 
 func! CodeMode()
+    packadd vim-indent-guides
     let g:indent_guides_guide_size = 1
     IndentGuidesEnable
     setlocal colorcolumn=81
