@@ -2,7 +2,6 @@
 " Remember to hard-link to python-mode syntax file for django highlighting
 syntax on
 filetype plugin indent on
-execute pathogen#infect()
 set nocp
 set autochdir                   " auto change dir to opened file
 set history=500
@@ -24,14 +23,15 @@ cmap w!! w !sudo tee > /dev/null %
 if has("gui_running")
   set lines=25
   set columns=86
+  let g:fzf_launcher = "xterm -fa 'Hack' -fs 9 -geometry 40x20 -e bash -ic %s"
   if has("gui_gtk2")
-    set guifont=Hack\ Regular\ 12
+    set guifont=Fantasque\ Sans\ Mono\ 12
   elseif has("gui_gtk3")
-    set guifont=Hack\ Regular\ 12
+    set guifont=Fantasque\ Sans\ Mono\ 12
   elseif has("gui_photon")
-    set guifont=Hack\ Regular:s12
+    set guifont=Fantasque\ Sans\ Mono:s12
   elseif has("gui_kde")
-    set guifont=Hack\ Regular/12/-1/5/50/0/0/0/1/0
+    set guifont=Fantasque\ Sans\ Mono/12/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-hack-r-regular-*-*-180-*-*-m-*-*
   else
@@ -57,7 +57,6 @@ set background=dark
 
 " search
 set ignorecase smartcase
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildmenu
 set wildignore+=*.o,*.pyc,*.bak
 
