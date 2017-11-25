@@ -58,3 +58,6 @@
 [submodule "vim/pack/bundle/opt/Vimball"]
 	path = vim/pack/bundle/opt/Vimball
 	url = https://github.com/vim-scripts/Vimball.git
+[submodule "vim/pack/bundle/start/vim-devicons"]
+	path = vim/pack/bundle/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
