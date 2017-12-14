@@ -1,15 +1,26 @@
 date +"%B %d %Y %r"
 echo "Greetings, Robert!"
 
+# Environment Variables
+export set TERMINAL=/usr/bin/xterm
+export set WORKON_HOME=/home/robert/Envs
+fish_vi_key_bindings
+fish_vi_cursor
+set -x PATH $PATH $HOME/bin $HOME/.local/bin
+set -x VIRTUAL_ENV_DISABLE_PROMPT 1
+set -g theme_nerd_fonts yes
+
 # aliases
 alias dd="sudo dcfldd"
 alias du=ncdu
 alias exot=exit
 alias free="free -m"
 alias autoclean="sudo apt autoremove --purge -y"
-export set WORKON_HOME=/home/robert/Envs
-fish_vi_key_bindings
-# fish_vi_cursor
+alias dj-rs="python manage.py runserver"
+alias dj-mm="python manage.py makemigrations"
+alias dj-mg="python manage.py migrate"
+alias dj-sh="python manage.py shell"
+alias dj-tt="python manage.py test"
 
 # shortcut functions
 
@@ -56,10 +67,3 @@ function rmvirtualenv
     end
     rm -rf $WORKON_HOME/$argv; and echo "Virtual environment deleted."
 end
-
-# Environment Variables
-export set TERMINAL=/usr/bin/xterm
-set -x PATH $PATH $HOME/bin $HOME/.local/bin
-set -x VIRTUAL_ENV_DISABLE_PROMPT 1
-set -g theme_nerd_fonts yes
-set -g theme_nerd_fonts yes
