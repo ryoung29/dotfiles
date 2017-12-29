@@ -9,10 +9,15 @@ map <buffer> gd /def <C-R><C-W><CR>
 
 inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
+nnoremap =G :call yapf#YAPF()<CR>
+nnoremap == :call yapf#YAPF() .<CR>
 
 set foldmethod=expr
 set foldexpr=PythonFoldExpr(v:lnum)
 set foldtext=PythonFoldText()
+setlocal colorcolumn=81
+let g:indent_guides_guide_size = 3
+IndentGuidesEnable
 
 "map <buffer> f za
 "map <buffer> F :call ToggleFold()<CR>

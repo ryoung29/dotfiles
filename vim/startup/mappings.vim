@@ -7,6 +7,9 @@ noremap <Leader>c :cd %:h<CR>
 noremap <Leader>n :NERDTreeToggle<CR>
 map <F3> mzgg=G`z
 
+" tagbar
+noremap <silent> <F8> :TagbarToggle<CR>
+
 " change word separated by underscores
 nmap cu ct_
 nmap cU cf_

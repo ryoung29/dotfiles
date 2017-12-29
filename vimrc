@@ -23,15 +23,15 @@ cmap w!! w !sudo tee > /dev/null %
 if has("gui_running")
   set lines=25
   set columns=86
-  let g:fzf_launcher = "xterm -fa 'Hack' -fs 9 -geometry 40x20 -e bash -ic %s"
+  let g:fzf_launcher = "xterm -fa 'Hack' -fs 11 -geometry 40x20 -e bash -ic %s"
   if has("gui_gtk2")
-    set guifont=Fantasque\ Sans\ Mono\ 12
+    set guifont=Source\ Code\ Pro\ Medium\ 12
   elseif has("gui_gtk3")
-    set guifont=Fantasque\ Sans\ Mono\ 12
+    set guifont=Source\ Code\ Pro\ Medium\ 12
   elseif has("gui_photon")
-    set guifont=Fantasque\ Sans\ Mono:s12
+    set guifont=Source\ Code\ Pro\ Medium:s12
   elseif has("gui_kde")
-    set guifont=Fantasque\ Sans\ Mono/12/-1/5/50/0/0/0/1/0
+    set guifont=Source\ Code\ Pro\ Medium/12/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-hack-r-regular-*-*-180-*-*-m-*-*
   else
@@ -82,21 +82,27 @@ let g:vimwiki_list = [{'path':'/home/robert/apps/vimwiki', 'path_html':'/home/ro
 let g:vimwiki_listsyms = ' ✗○◐✓'
 
 "python as IDE
-let g:pymode_syntax=1
-let g:pymode_breakpoint=0
-let g:pymode_builtin_objs=1
-let g:pymode_builtin_funcs=1
-let ropevim_enable_shortcuts = 1
-let g:pymode_rope_goto_def_newwin = "vnew"
-let g:pymode_rope_extended_complete = 1
-let g:pymode_rope_lookup_project = 1
+"let g:pymode_syntax=1
+"let g:pymode_breakpoint=0
+"let g:pymode_builtin_objs=1
+"let g:pymode_builtin_funcs=1
+"let g:pymode_rope=1
+"let ropevim_enable_shortcuts = 1
+"let g:pymode_rope_goto_def_newwin = "vnew"
+"let g:pymode_rope_extended_complete = 1
+"let g:pymode_rope_lookup_project = 1
 autocmd BufWrite *.py :call DeleteTrailingWS()
 set completeopt=longest,menuone
 
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
 " Snippets
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsEnableSnipMate = 1
 let g:ultisnips_python_style = "google"

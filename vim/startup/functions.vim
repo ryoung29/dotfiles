@@ -16,7 +16,7 @@ func! WordProcessorMode(ft)
     set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
     set complete+=s,k
     set formatprg=par\ -w100
-    setlocal wrap
+    "setlocal wrap
     setlocal linebreak
     if a:ft == "text"
         setlocal foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
@@ -29,7 +29,7 @@ com! WT call WordProcessorMode("text")
 func! CodeMode()
     packadd vim-indent-guides
     let g:indent_guides_guide_size = 1
-    IndentGuidesEnable
+    IndentGuidesToggle
     setlocal colorcolumn=81
 endfu
 com! CO call CodeMode()
