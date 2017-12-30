@@ -91,6 +91,12 @@ let g:vimwiki_listsyms = ' ✗○◐✓'
 "let g:pymode_rope_goto_def_newwin = "vnew"
 "let g:pymode_rope_extended_complete = 1
 "let g:pymode_rope_lookup_project = 1
+let g:ale_completion_enabled = 1
+let g:ale_fixers = {
+\ 'python': [
+\ 'add_blank_lines_for_python_control_statements', 'yapf', 'remove_trailing_lines', 'trim_whitespace'
+\]
+\}
 autocmd BufWrite *.py :call DeleteTrailingWS()
 set completeopt=longest,menuone
 

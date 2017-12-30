@@ -102,3 +102,4 @@ com! Py3P call Print2Python3()
 abbr pandas import pandas as pd
 abbr numpy import numpy as np
 abbr matplot import matplotlib.pyplot as plt
+abbr seaborn import seaborn as sns
