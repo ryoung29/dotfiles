@@ -45,7 +45,7 @@ set cursorline
 set hlsearch
 set splitbelow
 set splitright
-set number relativenumber
+set number
 set bs=2 " windows only - get backspace working
 set laststatus=2
 "set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ Col:\ %c
