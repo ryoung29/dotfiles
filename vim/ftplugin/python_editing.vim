@@ -15,7 +15,7 @@ nnoremap == :call yapf#YAPF() .<CR>
 set foldmethod=expr
 set foldexpr=PythonFoldExpr(v:lnum)
 set foldtext=PythonFoldText()
-setlocal colorcolumn=81
+setlocal colorcolumn=80
 let g:indent_guides_guide_size = 3
 IndentGuidesEnable
 
@@ -103,3 +103,5 @@ abbr pandas import pandas as pd
 abbr numpy import numpy as np
 abbr matplot import matplotlib.pyplot as plt
 abbr seaborn import seaborn as sns
+
+let b:ale_linters = ['flake8', 'pylint']
