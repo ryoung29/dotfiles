@@ -1,6 +1,3 @@
-date +"%B %d %Y %r"
-echo "Greetings, Robert!"
-
 # Environment Variables
 export set TERMINAL=/usr/bin/xterm
 export set WORKON_HOME=/home/robert/Envs
@@ -17,9 +14,11 @@ alias exot=exit
 alias free="free -m"
 alias autoclean="sudo apt autoremove --purge -y"
 alias dj-rs="python manage.py runserver"
+alias dj-rsp="python manage.py runserver_plus"
 alias dj-mm="python manage.py makemigrations"
 alias dj-mg="python manage.py migrate"
 alias dj-sh="python manage.py shell"
+alias dj-shp="python manage.py shell_plus"
 alias dj-tt="python manage.py test"
 
 # shortcut functions
@@ -52,7 +51,7 @@ function mkvirtualenv2
 end
 
 function mkvirtualenv
-    virtualenv -p python3 $WORKON_HOME/$argv;
+    virtualenv -p python3.6 $WORKON_HOME/$argv;
     and source $WORKON_HOME/$argv/bin/activate.fish;
     and echo "Virtual environment created."
 end
