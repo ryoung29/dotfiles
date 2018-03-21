@@ -20,6 +20,7 @@ alias dj-mg="python manage.py migrate"
 alias dj-sh="python manage.py shell"
 alias dj-shp="python manage.py shell_plus"
 alias dj-tt="python manage.py test"
+alias open xdg-open
 
 # shortcut functions
 
