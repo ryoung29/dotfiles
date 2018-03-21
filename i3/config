@@ -15,7 +15,7 @@ set $mod Mod4
 exec --no-startup-id nm-applet
 exec synology-cloud-station-drive
 exec /home/robert/.conky/Conky2.sh
-exec --no-startup-id unity-settings-daemon
+exec --no-startup-id gnome-settings-daemon
 
 # Colors
 # Class                 border  backgr. text    indicator

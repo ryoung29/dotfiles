@@ -1,0 +1,16 @@
+##Define Actions
+Actions=Accessioning;Notes;Wiki;
+
+[Desktop Action Accessioning]
+Name=Accessioning
+Exec=gvim /home/robert/apps/accessioning
+
+[Desktop Action Notes]
+Name=Notes
+Exec=gvim /home/robert/Documents/Code/Notes
+
+[Desktop Action Wiki]
+Name=Wiki
+Exec=gvim /home/robert/apps/vimwiki/index.wiki
+
+##End of actions menu
