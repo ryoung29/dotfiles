@@ -17,13 +17,20 @@ exec synology-cloud-station-drive
 exec /home/robert/.conky/Conky2.sh
 exec --no-startup-id gnome-settings-daemon
 
+# New mods
+workspace_auto_back_and_forth yes
+
+bindsym $mod+n exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
+bindsym $mod+Shift+p move scratchpad
+bindsym $mod+p scratchpad show
+
 # Colors
 # Class                 border  backgr. text    indicator
-client.focused          #5294E2 #000000 #5294E2 #000000
+client.focused          #5294E2 #282828 #EBDBB2 #282828
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000
+client.placeholder      #282828 #0c0c0c #ffffff #282828
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
