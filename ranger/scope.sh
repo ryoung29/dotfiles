@@ -68,6 +68,12 @@ case "$extension" in
 
     odt)  # Requires odt2txt
         try odt2txt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
+    doc)  # Requires catdoc
+        try catdoc "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
+    ppt)  # Requires catdoc
+        try catppt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
+    xls)  # Requires catdoc
+        try xls2csv "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     mp3|ogg)
         exiftool "$path" && exit 5
         # Use sed to remove spaces so the output fits into the narrow window
