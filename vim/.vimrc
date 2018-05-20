@@ -7,7 +7,7 @@ set autochdir                   " auto change dir to opened file
 set history=500
 set nocompatible
 set backup
-set backupdir=~/.vim/bak
+set backupdir=~/.vim_bak
 set pastetoggle=<F2>
 set autoread
 set shell=/bin/bash
