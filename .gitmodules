@@ -73,3 +73,6 @@
 [submodule "vim/pack/bundle/opt/papercolor-theme"]
 	path = vim/pack/bundle/opt/papercolor-theme
 	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "vim/.vim/pack/bundle/start/vimwiki"]
+	path = vim/.vim/pack/bundle/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
