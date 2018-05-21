@@ -48,7 +48,7 @@ floating_modifier $mod
 bindsym $mod+Return exec gnome-terminal --profile i3
 
 # start browser
-bindsym $mod+Shift+w exec surf ~/homepage/homepage.html
+bindsym $mod+Shift+w exec firefox ~/homepage/homepage.html
 
 # start gvim
 bindsym $mod+Shift+v exec gvim
@@ -183,14 +183,14 @@ bar {
             urgent_workspace    #1d2021 #cc241d #ebdbb2
         }
         position top
-        font pango:Hack 11
+        font pango:Hack 13
 }
 
 # Extra Key bindings
 bindsym $mod+Shift+y exec i3lock -c 6E7980 -p default -d -n
-bindsym XF86AudioRaiseVolume exec amixer -q -c 1 set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q -c 1 set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -q -c 1 set Master toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle
 bindsym XF86MonBrightnessUp exec ~/bin/BrightUp
 bindsym XF86MonBrightnessDown exec ~/bin/BrightDown
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks

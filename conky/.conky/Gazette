@@ -51,7 +51,7 @@ ${goto 10}${font Raleway:weight=Light :size=90}${time %I:%M}${font}
 
 
 
-${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 16.10
+${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 18.04
 ${goto 10}${font Caviar Dreams:size=13}Cpu1: ${cpu cpu1}%${goto 130}Cpu2: ${cpu cpu2}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu3: ${cpu cpu3}%${goto 130}Cpu4: ${cpu cpu4}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu5: ${cpu cpu5}%${goto 130}Cpu6: ${cpu cpu6}%

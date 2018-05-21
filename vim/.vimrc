@@ -25,13 +25,13 @@ if has("gui_running")
   set columns=86
   let g:fzf_launcher = "xterm -fa 'Hack' -fs 11 -geometry 40x20 -e bash -ic %s"
   if has("gui_gtk2")
-    set guifont=Source\ Code\ Pro\ Medium\ 12
+    set guifont=Source\ Code\ Pro\ Medium\ 13
   elseif has("gui_gtk3")
-    set guifont=Source\ Code\ Pro\ Medium\ 12
+    set guifont=Source\ Code\ Pro\ Medium\ 13
   elseif has("gui_photon")
-    set guifont=Source\ Code\ Pro\ Medium:s12
+    set guifont=Source\ Code\ Pro\ Medium:s13
   elseif has("gui_kde")
-    set guifont=Source\ Code\ Pro\ Medium/12/-1/5/50/0/0/0/1/0
+    set guifont=Source\ Code\ Pro\ Medium/13/-1/5/50/0/0/0/1/0
   elseif has("x11")
     set guifont=-*-hack-r-regular-*-*-180-*-*-m-*-*
   else
