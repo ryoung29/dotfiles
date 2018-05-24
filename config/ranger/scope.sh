@@ -72,6 +72,8 @@ case "$extension" in
         try catdoc "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     ppt)  # Requires catdoc
         try catppt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
+    xlsx)  # Requires catdoc
+        try xlsx2csv "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     xls)  # Requires catdoc
         try xls2csv "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     mp3|ogg)
