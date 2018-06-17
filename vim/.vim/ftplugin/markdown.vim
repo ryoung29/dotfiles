@@ -14,5 +14,7 @@ noremap <leader>hd :.HeaderDecrease<CR>
 noremap <leader>hi :.HeaderIncrease<CR>
 noremap <leader>tf :TableFormat<CR>
 set softtabstop=4
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set conceallevel=2

@@ -56,4 +56,3 @@ use_rar_for_unpack	1
 # decompress_to_cwd	1
 use_pigz 1
 use_pbzip2 1
-use_pxz 1
