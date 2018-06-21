@@ -78,8 +78,12 @@ source ~/.vim/startup/dragvisuals.vim
 "let g:ctrlp_cmd='CtrlP'
 let g:airline_powerline_fonts = 1
 let g:titlecase_map_keys = 0    " interferes with tabswitch
-let g:vimwiki_list = [{'path':'/home/robert/apps/vimwiki', 'path_html':'/home/robert/apps/vimwiki_html'}]
+let wiki_1 = {'path':'/home/robert/apps/vimwiki', 'path_html':'/home/robert/apps/vimwiki_html'}
+let wiki_2 = {'path': '/home/robert/Documents/Code/Notes', 'syntax': 'markdown', 'ext': '.md'}
+let wiki_3 = {'path': '/home/robert/Documents/Lab Insights/Notes', 'syntax': 'markdown', 'ext': '.md'}
+let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
 let g:vimwiki_listsyms = ' ✗○◐✓'
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.wiki': 'vimwiki'}
 
 "python as IDE
 "let g:pymode_syntax=1
@@ -121,3 +125,4 @@ let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_math=1
 let g:vim_markdown_folding=1
 let g:vim_markdown_disabled=0
+let g:vim_markdown_follow_anchor = 1
