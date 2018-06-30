@@ -47,29 +47,29 @@ color4 EF5A29
 
 TEXT
 ${font Caviar Dreams :size=16}${time %A}${font Caviar Dreams:size=26}   ${time %d %B}${font}
-${goto 10}${font Raleway:weight=Light :size=90}${time %I:%M}${font}
+${goto 10}${font Raleway:weight=Light :size=70}${time %I:%M}${font}
 
 
 
 ${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 18.04
-${goto 10}${font Caviar Dreams:size=13}Cpu1: ${cpu cpu1}%${goto 130}Cpu2: ${cpu cpu2}%
-${goto 10}${font Caviar Dreams:size=13}Cpu3: ${cpu cpu3}%${goto 130}Cpu4: ${cpu cpu4}%
+${goto 10}${font Caviar Dreams:size=13}Cpu1: ${cpu cpu1}%${goto 160}Cpu2: ${cpu cpu2}%
+${goto 10}${font Caviar Dreams:size=13}Cpu3: ${cpu cpu3}%${goto 160}Cpu4: ${cpu cpu4}%
 ${if_up cpu8}
-${goto 10}${font Caviar Dreams:size=13}Cpu5: ${cpu cpu5}%${goto 130}Cpu6: ${cpu cpu6}%
-${goto 10}${font Caviar Dreams:size=13}Cpu7: ${cpu cpu7}%${goto 130}Cpu8: ${cpu cpu8}%
+${goto 10}${font Caviar Dreams:size=13}Cpu5: ${cpu cpu5}%${goto 160}Cpu6: ${cpu cpu6}%
+${goto 10}${font Caviar Dreams:size=13}Cpu7: ${cpu cpu7}%${goto 160}Cpu8: ${cpu cpu8}%
 ${endif}
 
-${goto 10}Ram: ${memperc}%${goto 130}Swap: $swapperc%
+${goto 10}Ram: ${memperc}%${goto 160}Swap: $swapperc%
 
 
-${if_up wlp3s0}${font econ:size=24}+${font Caviar Dreams:size=24}Connection${font Caviar Dreams:weight=Light:size=15}   ${wireless_link_qual_perc wlp3s0}%
+${if_up wlp59s0}${font econ:size=24}+${font Caviar Dreams:size=24}Connection${font Caviar Dreams:weight=Light:size=15}   ${wireless_link_qual_perc wlp59s0}%
 
 ${goto 10}${font econ :size=16}k
-${font Caviar Dreams:size=16}${goto 28}${voffset -21} ${wireless_essid wlp3s0}
+${font Caviar Dreams:size=16}${goto 28}${voffset -21} ${wireless_essid wlp59s0}
 ${goto 10}${font econ :size=12}D
-${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${downspeed wlp3s0}
+${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${downspeed wlp59s0}
 ${goto 10}${font econ :size=12}I
-${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${upspeed wlp2s0}
+${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${upspeed wlp59s0}
 
 ${else}${if_up enp0s25}${font econ:size=24}K ${font Caviar Dreams:size=24}LAN
 ${goto 10}${font econ :size=12}D
