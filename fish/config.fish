@@ -4,7 +4,7 @@ export set WORKON_HOME=/home/robert/Envs
 export set JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/
 fish_vi_key_bindings
 fish_vi_cursor
-set -x PATH $PATH $HOME/bin $HOME/.local/bin
+set -x PATH $PATH $HOME/bin $HOME/.local/bin /snap/bin
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x QT_AUTO_SCREEN_SCALE_FACTOR 1
 set -g theme_nerd_fonts yes
