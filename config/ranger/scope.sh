@@ -68,11 +68,13 @@ case "$extension" in
 
     odt)  # Requires odt2txt
         try odt2txt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
+    ods)  # Requires ods2tsv
+         try ods2txt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     doc)  # Requires catdoc
         try catdoc "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     ppt)  # Requires catdoc
         try catppt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
-    xlsx)  # Requires catdoc
+    xlsx)  # Requires xlsx2csv
         try xlsx2csv "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     xls)  # Requires catdoc
         try xls2csv "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
