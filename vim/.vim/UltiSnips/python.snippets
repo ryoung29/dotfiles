@@ -19,3 +19,8 @@ ${2:train} = sc.fit_transform(${2:train})
 ${3:test} = sc.transform(${3:test})
 $0
 endsnippet
+
+snippet csvr "Pandas read_csv" b
+${1:dataset} = pd.read_csv('${2:filename}', parse_dates=$3, index_col=$4, sep='$5',$6)
+$0
+endsnippet
