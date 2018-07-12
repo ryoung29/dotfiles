@@ -66,12 +66,14 @@ case "$extension" in
         try elinks -dump "$path" && { dump | trim | fmt -s -w $width; exit 4; }
         ;; # fall back to highlight/cat if the text browsers fail
 
-    odt)  # Requires odt2txt
+    odt|odp)  # Requires odt2txt
         try odt2txt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     ods)  # Requires ods2tsv
          try ods2txt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     doc)  # Requires catdoc
         try catdoc "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
+    docx)  # Requires docx2txt
+        try docx2txt "$path" - && { dump | trim | fmt -s -w $width; exit 0;};;
     ppt)  # Requires catdoc
         try catppt "$path" && { dump | trim | fmt -s -w $width; exit 0;};;
     xlsx)  # Requires xlsx2csv
