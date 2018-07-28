@@ -76,3 +76,6 @@
 [submodule "vim/.vim/pack/bundle/start/vimwiki"]
 	path = vim/.vim/pack/bundle/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "vim/.vim/pack/bundle/start/vim-abolish"]
+	path = vim/.vim/pack/bundle/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
