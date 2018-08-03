@@ -79,3 +79,6 @@
 [submodule "vim/.vim/pack/bundle/start/vim-abolish"]
 	path = vim/.vim/pack/bundle/start/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "vim/.vim/pack/bundle/start/vim-exchange"]
+	path = vim/.vim/pack/bundle/start/vim-exchange
+	url = https://github.com/tommcdo/vim-exchange.git

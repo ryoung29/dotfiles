@@ -1,5 +1,6 @@
 " Only do this when not done yet for this buffer
 packadd yapf
+packadd vim-indent-guides
 
 if exists("b:did_ftplugin")
 finish
@@ -105,5 +106,7 @@ abbr pandas import pandas as pd
 abbr numpy import numpy as np
 abbr matplot import matplotlib.pyplot as plt
 abbr seaborn import seaborn as sns
+abbr spstats from scipy.stats import
+abbr smstats from statsmodels.stats import
 
 let b:ale_linters = ['flake8', 'pylint']

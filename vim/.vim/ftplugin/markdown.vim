@@ -1,3 +1,5 @@
+packadd tabular
+
 "abbreviations
 abbr h1 #
 abbr h2 ##
