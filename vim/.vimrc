@@ -54,6 +54,7 @@ set statusline=%{HasPaste()}%r%{getcwd()}\\%t%h%m%r%y%=[%{strlen(&fenc)?&fenc:'n
 set t_Co=256
 colors gruvbox
 set background=dark
+let g:gruvbox_contrast_light="hard"
 
 " search
 set ignorecase smartcase
@@ -83,7 +84,7 @@ let wiki_2 = {'path': '/home/robert/Documents/Code/Notes', 'syntax': 'markdown',
 let wiki_3 = {'path': '/home/robert/Documents/Lab Insights/Notes', 'syntax': 'markdown', 'ext': '.md'}
 let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
 let g:vimwiki_listsyms = ' ✗○◐✓'
-" let g:vimwiki_ext2syntax = {'.md': 'markdown', '.wiki': 'vimwiki'}
+"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.wiki': 'vimwiki'}
 
 "python as IDE
 "let g:pymode_syntax=1
