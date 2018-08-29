@@ -13,7 +13,7 @@ set -g theme_nerd_fonts yes
 alias dd="sudo dcfldd"
 alias du=ncdu
 alias exot=exit
-alias free="free -m"
+alias free="free -mh"
 alias autoclean="sudo apt autoremove --purge -y"
 alias dj-rs="python manage.py runserver"
 alias dj-rsp="python manage.py runserver_plus"
@@ -23,8 +23,9 @@ alias dj-sh="python manage.py shell"
 alias dj-shp="python manage.py shell_plus"
 alias dj-tt="python manage.py test"
 alias open xdg-open
-alias ccat="pygmentize -g"
+alias ccat="highlight --style darkspectrum --out-format xterm256 --input"
 alias tailf="tail -f"
+alias process "ps -aux | grep"
 
 # shortcut functions
 
