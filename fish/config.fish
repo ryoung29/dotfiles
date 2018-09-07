@@ -1,7 +1,7 @@
 # Environment Variables
 export set TERMINAL=/usr/bin/xterm
 export set WORKON_HOME=/home/robert/Envs
-export set JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/
+export set JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64/
 fish_vi_key_bindings
 fish_vi_cursor
 set -x PATH $PATH $HOME/bin $HOME/.local/bin /snap/bin
@@ -23,9 +23,10 @@ alias dj-sh="python manage.py shell"
 alias dj-shp="python manage.py shell_plus"
 alias dj-tt="python manage.py test"
 alias open xdg-open
-alias ccat="highlight --style darkspectrum --out-format xterm256 --input"
+alias ccat="highlight -l --style=tabula --out-format xterm256 --input"
 alias tailf="tail -f"
 alias process "ps -aux | grep"
+alias diff=colordiff
 
 # shortcut functions
 
