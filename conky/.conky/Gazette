@@ -11,9 +11,9 @@ no_buffers yes
 text_buffer_size 2048
 
 gap_x 25
-gap_y 50
+gap_y 75
 minimum_size 320 550
-maximum_width 450
+maximum_width 650
 own_window yes
 own_window_type normal
 own_window_class Conky
@@ -47,11 +47,11 @@ color4 EF5A29
 
 TEXT
 ${font Caviar Dreams :size=16}${time %A}${font Caviar Dreams:size=26}   ${time %d %B}${font}
-${goto 10}${font Raleway:weight=Light :size=70}${time %I:%M}${font}
+${goto 10}${font Caviar Dreams :size=70}${time %I:%M}${font}
 
 
 
-${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 18.04
+${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 18.10
 ${goto 10}${font Caviar Dreams:size=13}Cpu1: ${cpu cpu1}%${goto 160}Cpu2: ${cpu cpu2}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu3: ${cpu cpu3}%${goto 160}Cpu4: ${cpu cpu4}%
 ${if_up cpu8}
