@@ -6,6 +6,8 @@ nmap <SPACE> i<SPACE><ESC>
 noremap <Leader>c :cd %:h<CR>
 noremap <Leader>n :NERDTreeToggle<CR>
 map <F3> mzgg=G`z
+" Find next, then repeat amount of times
+noremap <Leader>q @='n.'<CR>
 
 " tagbar
 noremap <silent> <F8> :TagbarToggle<CR>
