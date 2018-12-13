@@ -54,10 +54,10 @@ ${goto 10}${font Caviar Dreams :size=70}${time %I:%M}${font}
 ${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 18.10
 ${goto 10}${font Caviar Dreams:size=13}Cpu1: ${cpu cpu1}%${goto 160}Cpu2: ${cpu cpu2}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu3: ${cpu cpu3}%${goto 160}Cpu4: ${cpu cpu4}%
-${if_up cpu8}
 ${goto 10}${font Caviar Dreams:size=13}Cpu5: ${cpu cpu5}%${goto 160}Cpu6: ${cpu cpu6}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu7: ${cpu cpu7}%${goto 160}Cpu8: ${cpu cpu8}%
-${endif}
+${goto 10}${font Caviar Dreams:size=13}Cpu9: ${cpu cpu7}%${goto 160}Cpu10: ${cpu cpu8}%
+${goto 10}${font Caviar Dreams:size=13}Cpu11: ${cpu cpu7}%${goto 160}Cpu12: ${cpu cpu8}%
 
 ${goto 10}Ram: ${memperc}%${goto 160}Swap: $swapperc%
 
@@ -71,9 +71,9 @@ ${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${downspeed wlp59s0}
 ${goto 10}${font econ :size=12}I
 ${font Caviar Dreams:size=15}${goto 28}${voffset -21} ${upspeed wlp59s0}
 
-${else}${if_up enp0s25}${font econ:size=24}K ${font Caviar Dreams:size=24}LAN
+${else}${if_up enp0s31f6}${font econ:size=24}K ${font Caviar Dreams:size=24}LAN
 ${goto 10}${font econ :size=12}D
-${font Avenir Medium:size=12}${goto 28}${voffset -21} ${downspeed enp0s25}
+${font Avenir Medium:size=12}${goto 28}${voffset -21} ${downspeed enp0s31f6}
 ${goto 10}${font econ :size=12}I
-${font Avenir Medium:size=12}${goto 28}${voffset -21} ${upspeed enp0s25}
+${font Avenir Medium:size=12}${goto 28}${voffset -21} ${upspeed enp0s31f6}
 ${else}${font Caviar Dreams:size=20}Disconnected${endif}${endif}
