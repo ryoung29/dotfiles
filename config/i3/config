@@ -13,7 +13,7 @@ set $mod Mod4
 
 # startup items
 exec --no-startup-id nm-applet
-exec synology-cloud-station-drive
+exec synology-drive
 exec /home/robert/.conky/Conky2.sh
 exec --no-startup-id gnome-settings-daemon
 
