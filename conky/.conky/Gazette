@@ -62,7 +62,7 @@ ${goto 10}${font Caviar Dreams:size=13}Cpu11: ${cpu cpu7}%${goto 160}Cpu12: ${cp
 ${goto 10}Ram: ${memperc}%${goto 160}Swap: $swapperc%
 
 
-${if_up wlp59s0}${font econ:size=24}+${font Caviar Dreams:size=24}Connection${font Caviar Dreams:weight=Light:size=15}   ${wireless_link_qual_perc wlp59s0}%
+${if_up wlp59s0}${font econ:size=24}+${font Caviar Dreams:size=24}Connection${font Caviar Dreams:size=15}   ${wireless_link_qual_perc wlp59s0}%
 
 ${goto 10}${font econ :size=16}k
 ${font Caviar Dreams:size=16}${goto 28}${voffset -21} ${wireless_essid wlp59s0}
