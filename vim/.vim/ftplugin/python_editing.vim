@@ -1,5 +1,4 @@
 " Only do this when not done yet for this buffer
-packadd yapf
 packadd vim-indent-guides
 
 if exists("b:did_ftplugin")
@@ -12,6 +11,9 @@ map <buffer> gd /def <C-R><C-W><CR>
 
 inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
+
+" yapf
+packadd yapf
 map <C-Y> :call yapf#YAPF()<cr>
 imap <C-Y> <c-o>:call yapf#YAPF()<cr>
 

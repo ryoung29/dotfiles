@@ -10,7 +10,6 @@ endfunction
 func! WordProcessorMode(ft)
     setlocal formatoptions=tqn1
     setlocal wrap lbr nolist
-    setlocal noexpandtab
     setlocal textwidth=100
     setlocal spell spelllang=en_us
     set thesaurus+=/home/robert/.vim/thesaurus/mthesaur.txt
@@ -19,6 +18,7 @@ func! WordProcessorMode(ft)
     if a:ft == "text"
         setlocal foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
         setlocal foldmethod=expr
+        setlocal noexpandtab
     endif
 endfu
 com! WP call WordProcessorMode("markdown")

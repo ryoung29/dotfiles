@@ -1,5 +1,6 @@
-set autoindent smartindent
-set tabstop=2
-set shiftwidth=2
-set expandtab smarttab                 " spaces instead of tabs
-set foldmethod=indent
+setlocal autoindent smartindent
+setlocal tabstop=2
+setlocal shiftwidth=2
+setlocal noexpandtab smarttab
+setlocal foldmethod=indent
+setlocal colorcolumn=121

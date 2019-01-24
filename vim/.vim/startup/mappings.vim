@@ -66,15 +66,6 @@ nmap { {zz
 "open tag in new tab
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
-"quick pairs
-imap <leader>' ''<ESC>i
-imap <leader>" ""<ESC>i
-imap <leader>( ()<ESC>i
-imap <leader>[ []<ESC>i
-imap <leader>{ {}<ESC>i
-imap <leader>< <><ESC>i
-imap <leader>% %  %<ESC>hi
-
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k

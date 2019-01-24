@@ -1,8 +1,8 @@
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set foldmethod=expr
-set foldexpr=RFoldExpr(v:lnum)
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal shiftwidth=2
+setlocal foldmethod=expr
+setlocal foldexpr=RFoldExpr(v:lnum)
 
 " RStudio-like folding
 function! RFoldExpr(lnum)
