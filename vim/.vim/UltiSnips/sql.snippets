@@ -1,0 +1,24 @@
+snippet join "Join Clause" b
+JOIN ${1:other} ${2:o} on (${3:a}.${4:field} = $2.${5:field})
+$0
+endsnippet
+
+snippet cview "Create view" b
+CREATE OR REPLACE ${1:public}.${2:viewname} AS
+SELECT
+	${3:*}
+FROM
+	${4:table}
+WHERE
+	$0
+endsnippet
+
+snippet cmview "Create materialized view" b
+CREATE MATERIALIZED VIEW IF NOT EXISTS ${1:public}.${2:viewname} AS
+SELECT
+	${3:*}
+FROM
+	${4:table}
+WHERE
+	$0
+endsnippet

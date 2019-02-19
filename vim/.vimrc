@@ -101,9 +101,10 @@ let g:ale_completion_enabled = 1
 let g:ale_fixers = {
 \ 'python': [
 \ 'add_blank_lines_for_python_control_statements', 'yapf', 'remove_trailing_lines', 'trim_whitespace'
-\]
+\],
+\ 'sql': ['remove_trailing_lines', 'trim_whitespace']
 \}
-autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.py,*.R,*.sql :call DeleteTrailingWS()
 set completeopt=longest,menuone
 
 " make YCM compatible with UltiSnips (using supertab)

@@ -1,3 +1,4 @@
 Align.vba: call delete('/home/robert/.vim/plugin/AlignPlugin.vim')|call delete('/home/robert/.vim/plugin/AlignMapsPlugin.vim')|call delete('/home/robert/.vim/plugin/cecutil.vim')|call delete('/home/robert/.vim/doc/Align.txt')|call delete('/home/robert/.vim/autoload/Align.vim')|call delete('/home/robert/.vim/autoload/AlignMaps.vim')
 csv-0.31.vmb: call delete('/home/robert/.vim/ftplugin/csv.vim')|call delete('/home/robert/.vim/doc/ft-csv.txt')|call delete('/home/robert/.vim/syntax/csv.vim')|call delete('/home/robert/.vim/ftdetect/csv.vim')|call delete('/home/robert/.vim/plugin/csv.vim')
 visincr.vba: call delete('/home/robert/.vim/plugin/visincrPlugin.vim')|call delete('/home/robert/.vim/autoload/visincr.vim')|call delete('/home/robert/.vim/doc/visincr.txt')
+calutil.vba: call delete('/home/robert/.vim/doc/calutil.txt')|call delete('/home/robert/.vim/autoload/calutil.vim')
