@@ -85,3 +85,6 @@
 [submodule "vim/.vim/pack/bundle/start/auto-pairs"]
 	path = vim/.vim/pack/bundle/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/.vim/pack/bundle/start/vim-commentary"]
+	path = vim/.vim/pack/bundle/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
