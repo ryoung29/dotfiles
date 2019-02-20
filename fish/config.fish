@@ -27,6 +27,7 @@ alias ccat="highlight -l --style=tabula --out-format xterm256 --input"
 alias tailf="tail -f"
 alias process "ps -aux | grep"
 alias diff=colordiff
+alias ls="ls --color --group-directories-first"
 
 # shortcut functions
 
