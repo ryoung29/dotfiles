@@ -132,3 +132,5 @@ let g:vim_markdown_follow_anchor = 1
 
 " Auto-pairs
 let g:AutoPairsFlyMode = 1
+
+autocmd FileType python setlocal commentstring=#\ %s
