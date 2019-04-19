@@ -76,6 +76,9 @@
 # of ranger.
 # ===================================================================
 
+from collections import deque
+import re
+
 from ranger.api.commands import *
 
 class alias(Command):
