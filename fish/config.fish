@@ -8,6 +8,7 @@ set -x PATH $PATH $HOME/bin $HOME/.local/bin /snap/bin
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x QT_AUTO_SCREEN_SCALE_FACTOR 1
 set -g theme_nerd_fonts yes
+set -g theme_color_scheme gruvbox
 
 # aliases
 alias dd="sudo dcfldd"
@@ -59,7 +60,7 @@ function mkvirtualenv2
 end
 
 function mkvirtualenv
-    virtualenv -p python3.6 $WORKON_HOME/$argv;
+    virtualenv -p python3.7 $WORKON_HOME/$argv;
     and source $WORKON_HOME/$argv/bin/activate.fish;
     and echo "Virtual environment created."
 end

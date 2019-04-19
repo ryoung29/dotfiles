@@ -11,7 +11,7 @@
 
 # use_tar_bzip2_option	1
 # use_tar_z_option	1
-# use_gzip_for_z	1
+use_gzip_for_z	0
 use_rar_for_unpack	1
 # use_arc_for_unpack	0
 # use_arj_for_unpack	0

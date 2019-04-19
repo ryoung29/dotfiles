@@ -51,7 +51,7 @@ ${goto 10}${font Caviar Dreams :size=70}${time %I:%M}${font}
 
 
 
-${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 18.10
+${font OpenLogos:size=24}u ${font Caviar Dreams:size=24}Ubuntu 19.04
 ${goto 10}${font Caviar Dreams:size=13}Cpu1: ${cpu cpu1}%${goto 160}Cpu2: ${cpu cpu2}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu3: ${cpu cpu3}%${goto 160}Cpu4: ${cpu cpu4}%
 ${goto 10}${font Caviar Dreams:size=13}Cpu5: ${cpu cpu5}%${goto 160}Cpu6: ${cpu cpu6}%
