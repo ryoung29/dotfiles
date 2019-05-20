@@ -80,6 +80,9 @@ from collections import deque
 import re
 
 from ranger.api.commands import *
+import re
+import os
+from collections import deque
 
 class alias(Command):
     """:alias <newcommand> <oldcommand>

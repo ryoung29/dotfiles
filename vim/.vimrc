@@ -134,3 +134,13 @@ let g:vim_markdown_follow_anchor = 1
 let g:AutoPairsFlyMode = 1
 
 autocmd FileType python setlocal commentstring=#\ %s
+
+" Meta Key
+let c='a'
+while c <= 'z'
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+set timeout ttimeoutlen=50

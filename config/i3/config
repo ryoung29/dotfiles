@@ -39,7 +39,7 @@ client.placeholder      #282828 #0c0c0c #ebdbb2 #282828
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Hack 14
+font pango:Hack 18
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -57,8 +57,8 @@ bindsym $mod+Shift+v exec gvim
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -font "Hack 14"
-bindsym $mod+Tab exec rofi -show window -font "Hack 14"
+bindsym $mod+d exec rofi -show run -font "Hack 18"
+bindsym $mod+Tab exec rofi -show window -font "Hack 18"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -183,7 +183,7 @@ bar {
             urgent_workspace    #1d2021 #cc241d #ebdbb2
         }
         position top
-        font pango:Hack 13
+        font pango:Hack 16
 }
 
 # Extra Key bindings
