@@ -77,6 +77,7 @@
 # ===================================================================
 
 from collections import deque
+import os
 import re
 
 from ranger.api.commands import *
@@ -666,6 +667,7 @@ class rename(Command):
 
     def execute(self):
         from ranger.container.file import File
+        import os
         from os import access
 
         new_name = self.rest(1)
