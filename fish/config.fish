@@ -75,3 +75,5 @@ function rmvirtualenv
     end
     rm -rf $WORKON_HOME/$argv; and echo "Virtual environment deleted."
 end
+
+source "$__fish_config_dir"/completions
